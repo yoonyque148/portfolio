@@ -1,0 +1,64 @@
+#content .title_area h2::before{content: 'Overview'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; bottom: 45px; color: #8E684C; }
+
+/* 기업소개의 실제 본문 내용 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;}
+
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 1.7rem; color:#8E684C; text-align:center; font-weight: 600;}
+.content_area .p1{font-size: 1.2rem; color:#555; text-align:center; width: 90%; margin: 0 auto; margin-top: 20px; margin-bottom: 80px; line-height: 2.2rem; }
+
+
+/* 본문 영역 */
+.content_area ul{margin-bottom: 80px;}
+.content_area ul li{margin-bottom: 50px;}
+
+.content_area ul li:nth-of-type(1) div{
+    width: 90%; margin: 0 auto;
+    text-align: justify;
+}
+.content_area ul li:nth-of-type(2) div{
+    width: 90%;; margin: 0 auto;
+    float: right;
+    text-align: right;
+}
+.content_area ul li:nth-of-type(3) div{
+    width: 90%; margin: 0 auto;
+}
+
+.content_area ul li:nth-of-type(1) img{
+    width: 95%; margin: 0 auto;
+    border-radius: 0 300px 300px 0;
+}
+.content_area ul li:nth-of-type(2) img{
+    width: 95%; margin: 0 auto; 
+    float: right;
+    border-radius: 300px 0 0 300px;
+}
+.content_area ul li:nth-of-type(3) img{
+    width: 95%; margin: 0 auto;
+    border-radius: 0 300px 300px 0;
+}
+
+.content_area ul li h4{
+    width: 100%;
+    font-family: "Noto Serif KR"; 
+    font-size: 2rem; 
+    font-weight: 500;
+    margin-top: 20px;
+}
+.content_area ul li:nth-of-type(2) h4{
+    width: 95%;
+}
+
+.content_area ul li p{
+    width: 95%;
+    font-size: 1.2rem;
+    line-height: 2rem; 
+    margin-top: 20px;
+}
+.content_area ul li:nth-of-type(2){
+    float: right;
+}

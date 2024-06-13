@@ -1,0 +1,174 @@
+#content .title_area h2::before{
+    content: 'Social Responsibility'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; bottom: 45px; color: #8E684C; }
+
+/* 사회공헌의 실제 본문 내용 */ 
+
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;  }
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2rem; color:#8E684C; text-align:center; font-weight: 600;
+    margin-top: 5%;}
+.content_area .p1{font-size: 1.2rem; color:#555; text-align:center; width: 90%; margin: 0 auto; margin-top: 5%; margin-bottom: 15%; line-height: 2.2rem; }
+
+
+/* 맛있는제주 콘텐츠 시작 */
+.content_area .con1 img:first-of-type{width: 100%; }
+.content_area .con1 img:nth-of-type(2){width: 80%; display: block; margin: 80px auto;}
+.content_area .con1 h4{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.content_area .con1 span{
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.content_area .con1 h5{
+    width: 80%; margin: 0 10%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #8E684C;
+    margin-bottom: 15px;
+}
+.content_area .con1 p{
+    width: 90%; margin: 0 5%;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #555;
+    line-height: 2rem;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+
+/* con2 */
+.content_area .con2{width: 100%; position: relative;}
+.content_area .con2_box::before{
+    content: ''; display: block;
+    width: 100%; height: 100%;
+    background: #E6E3DC;
+    position: absolute; left: 0; top: 10%;
+    z-index: -10;
+}
+.content_area .con2 img{
+    display: block;
+    width: 90%; margin: 0 5%;
+    margin-top: 70px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+.content_area .con2 h5{
+    width: 80%; margin: 0 10%;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-top: 40px;
+}
+.content_area .con2 p:nth-of-type(1){
+    width: 90%; margin: 0 5%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.content_area .con2 p:nth-of-type(2){
+    width: 90%; margin: 0 5%;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    line-height: 2.2rem;
+    margin-bottom: 20%;
+}
+
+
+/* con3  */
+.content_area .con3{width: 100%; margin: 120px auto 100px;}
+.content_area .con3 ul{width: 90%; margin: 0 5%;}
+.content_area .con3 ul li{
+    width: 100%; height: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    transition: all .2s ease-out;
+    overflow: hidden;
+    position: relative;
+}
+.content_area .con3 ul li:nth-of-type(1){
+    background: url(../images/sub3/li1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content_area .con3 ul li:nth-of-type(2){
+    background: url(../images/sub3/li2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content_area .con3 ul li dl{
+    color: #fff;
+}
+.content_area .con3 ul li dl dt{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    margin-bottom: 20px;
+}
+.content_area .con3 ul li dl dd{
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+
+/* 식당 리스트 */
+.content_area .con4 h5{
+    width: 80%; margin: 0 10%;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-top: 40px;
+}
+.content_area .restaurant{width: 100%; height: auto;}
+
+.content_area .restaurant ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0 ;
+}
+.content_area .restaurant ul li{
+    width: 33.33%;
+    margin: 0 24%;
+    display: flex; 
+    flex-direction: column;
+    margin: 20px 0;
+}
+.content_area .restaurant ul li img{
+    width: 80%; margin: 0 10%;
+    border-radius: 100px;
+}
+.content_area .restaurant ul li dl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+} 
+.content_area .restaurant ul li dl dt{
+    color: #8E684C;
+    border: 1px solid #8E684C;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+.content_area .restaurant ul li dl dd{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+

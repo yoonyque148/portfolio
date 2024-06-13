@@ -1,0 +1,364 @@
+#content .title_area h2::before{
+    content: 'Shilla Hotel'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; bottom: 45px; color: #8E684C; }
+
+/* 신라호텔의 실제 본문 내용 */ 
+
+
+/* 구글 아이콘 */
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+
+/* 브랜드 소개 - 신라호텔 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;}
+.content_area .brand_title img{width: 100%; margin-top: 5%;}
+.content_area .brand_title h3{
+    font-family:"Noto Serif KR" ; font-size: 2rem; color:#423124; text-align:center; font-weight: 600;
+    margin-top: 5%;
+}
+.content_area .brand_title span{
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #FFCCA8;
+    margin-top: 2%;
+}
+.content_area .brand_title .p1{
+    font-size: 1.2rem; color:#555; text-align:center; width: 90%; margin: 0 auto; margin-top: 5%; margin-bottom: 15%; line-height: 2.2rem;
+}
+.content_area hr{
+    width: 100%;
+    background:#d9d9d9; 
+    height:1px; 
+    border:0; 
+    margin-bottom: 15%;
+}
+
+/* 브랜드 소개 */
+.brand_intro{width: 100%; margin: 0 auto;}
+.brand_intro ul{width: 90%; margin: 0 auto;}
+.brand_intro ul li{margin-bottom: 50px;}
+.brand_intro ul li:last-of-type{margin-bottom: 80px;}
+.brand_intro ul li .intro_tit{
+    font-size: 1.6rem; 
+    font-weight: 600; 
+    color: #8E684C;
+    display: block;
+    margin-bottom: 15px;
+}
+.brand_intro ul li .intro_bottom{
+    text-align: left;
+}
+.brand_intro ul li .intro_bottom .p2{
+    font-family:"Noto Serif KR";
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 15px;
+    background: #FFF8F2;
+    padding: 20px;
+}
+.brand_intro ul li .intro_bottom .p3{
+    font-size: 1.1rem; 
+    line-height: 1.8rem;
+    border-radius: 15px;
+    border: 1px solid #ffede1;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 8px 0 5%;
+}
+.brand_intro ul li:nth-of-type(2) p,
+.brand_intro ul li:nth-of-type(3) p{
+    font-size: 1.1rem; 
+    line-height: 1.8rem;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+
+
+/* table code */
+.brand_intro ul li .intro_bottom table{
+    width: 100%;
+    font-size: 1rem;
+    color: #555;
+}
+.brand_intro ul li .intro_bottom table th{
+    font-weight: normal;
+    padding: 2% 1%;
+}
+.brand_intro ul li .intro_bottom table thead tr{
+    width: 21%;
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+}
+.brand_intro ul li .intro_bottom table tbody tr{
+    border-bottom: 1px solid #d9d9d9;
+}
+.brand_intro ul li .intro_bottom table tbody th{
+    width: 37%;
+    padding: 3% 2%;
+    background: #FFF8F2;
+}
+.brand_intro ul li .intro_bottom table tbody span{
+    color: #8E684C;
+    text-align: center;
+    font-size: 1.7rem;
+    display: block;
+}
+
+/* guideline code */
+.brand_intro ul li .intro_bottom .guideline{
+    width: 100%;
+}
+.brand_intro ul li .intro_bottom .guideline dl{
+    width: 30%; margin: 0 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.brand_intro ul li .intro_bottom .guideline dl dt span{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #8E684C;
+    background: #FFF8F2;
+    border-radius: 50%;
+    padding: 30px;
+    font-weight: 200;
+}
+.brand_intro ul li .intro_bottom .guideline dl dd{
+    margin-top: 10px;
+    color: #333;
+    font-size: .9rem ;
+    text-align: center;
+}
+
+.swiper-scrollbar-drag{background: #85654e81;}
+
+
+
+
+
+
+
+
+/* 서울신라호텔 섹션 */
+#seoul{ width: 100%; height: 830px; margin-bottom: 80px;}
+
+#seoul .seoul_content{position: relative;}
+#seoul .seoul_content .seoul_gallery_wrap{
+    width: 100%; height: 300px;
+    padding: 80px 0;
+    background: #8E684C;
+}
+#seoul .seoul_content .seoul_gallery{
+    width: 100%;
+}
+#seoul .seoul_content .seoul_gallery ul.gallery {
+    width: 100%;
+}
+#seoul .seoul_content .seoul_gallery ul.gallery li{
+    width: 300px; 
+}
+#seoul .seoul_content .seoul_gallery ul.gallery li img{
+    width: 300px; height: auto;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 서울신라호텔 텍스트 박스 */
+#seoul .seoul_box{
+    margin: 0 5%;
+    text-align: center;
+    background: #fff;
+    padding: 20px 0 40px;
+    margin-top: 130px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px #8E684C;
+    position: absolute; top: 200px;
+}
+#seoul .seoul_box h4{
+    font-size: 1.8rem;
+    color: #423124; 
+    margin-top: 70px; 
+    position: relative;
+}
+#seoul .seoul_box h4::before{
+    content: '01'; display: block;
+    font-family: 'Montserrat';
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffcca851;
+    position: absolute; left: 50%; bottom: 5px;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: -1;
+}
+#seoul .seoul_box > span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8E684C;
+    display: block;
+    margin: 20px 0 20px;
+}
+#seoul .seoul_box p{
+    width: 90%; margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+#seoul .seoul_box .seoul_link{
+    width: 40%; margin: 0 auto;
+    border: 1px solid #8E684C;
+    color: #8E684C;
+    border-radius: 40px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    transition: all .4s ease-out;
+}
+#seoul .seoul_box .seoul_link span:nth-child(1){
+    font-size: 1.1rem;
+}
+#seoul .seoul_box .seoul_link .material-symbols-outlined{
+    color: #8E684C;
+    transition: all .4s ease-out;
+}
+#seoul .seoul_box .seoul_link:hover {
+   background: #8E684C;
+}
+#seoul .seoul_box .seoul_link:hover span{
+    color: #fff;
+}
+
+
+
+
+/* 제주신라호텔 섹션 */
+#jeju{ width: 100%; height: 830px; margin-bottom: 80px;}
+
+#jeju .jeju_content{position: relative;}
+#jeju .jeju_content .jeju_gallery_wrap{
+    width: 100%; height: 300px;
+    padding: 80px 0;
+    background: #8E684C;
+}
+#jeju .jeju_content .jeju_gallery{
+    width: 100%;
+}
+#jeju .jeju_content .jeju_gallery ul.gallery {
+    width: 100%;
+}
+#jeju .jeju_content .jeju_gallery ul.gallery li{
+    width: 300px; 
+}
+#jeju .jeju_content .jeju_gallery ul.gallery li img{
+    width: 300px; height: auto;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 제주신라호텔 텍스트 박스 */
+#jeju .jeju_box{
+    margin: 0 5%;
+    text-align: center;
+    background: #fff;
+    padding: 20px 0 40px;
+    margin-top: 130px;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px #8E684C;
+    position: absolute; top: 200px;
+}
+#jeju .jeju_box h4{
+    font-size: 1.8rem;
+    color: #423124; 
+    margin-top: 70px; 
+    position: relative;
+}
+#jeju .jeju_box h4::before{
+    content: '02'; display: block;
+    font-family: 'Montserrat';
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffcca851;
+    position: absolute; left: 50%; bottom: 5px;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: -1;
+}
+#jeju .jeju_box > span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8E684C;
+    display: block;
+    margin: 20px 0 20px;
+}
+#jeju .jeju_box p{
+    width: 90%; margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+#jeju .jeju_box .jeju_link{
+    width: 40%; margin: 0 auto;
+    border: 1px solid #8E684C;
+    color: #8E684C;
+    border-radius: 40px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    transition: all .4s ease-out;
+}
+#jeju .jeju_box .jeju_link span:nth-child(1){
+    font-size: 1.1rem;
+}
+#jeju .jeju_box .jeju_link .material-symbols-outlined{
+    color: #8E684C;
+    transition: all .4s ease-out;
+}
+#jeju .jeju_box .jeju_link:hover {
+   background: #8E684C;
+}
+#jeju .jeju_box .jeju_link:hover span{
+    color: #fff;
+}
+
+
+
+
+
+
+.movetop .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
