@@ -1,0 +1,268 @@
+{
+    "wp_AR": [
+      {
+        "Img": "./images/weapon/AR/ar_akm.png",
+        "Gun": "AKM",
+        "Bullet": "7.62mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_aug_a3.png",
+        "Gun": "AUG A3",
+        "Bullet": "5.56mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_famas_g2.png",
+        "Gun": "FAMAS",
+        "Bullet": "5.56mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_groza.png",
+        "Gun": "GROZA",
+        "Bullet": "7.62mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_k2.png",
+        "Gun": "K2",
+        "Bullet": "5.56mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_m16a4.png",
+        "Gun": "M16A4",
+        "Bullet": "5.56mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_m416.png",
+        "Gun": "M416",
+        "Bullet": "5.56mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_m762.png",
+        "Gun": "Beryl M762",
+        "Bullet": "7.62mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_mk47_mutant.png",
+        "Gun": "Mk47 Mutant",
+        "Bullet": "7.62mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_qbz95.png",
+        "Gun": "QBZ",
+        "Bullet": "5.56mm"
+      },
+      {
+        "Img": "./images/weapon/AR/ar_scar-l.png",
+        "Gun": "SCAL-L",
+        "Bullet": "5.56mm"
+      }     
+    ],
+
+    "wp_DMR": [
+        {
+          "Img": "./images/weapon/DMR/dmr_dragunov.png",
+          "Gun": "드라구노프",
+          "Bullet": "7.62mm"
+        },
+        {
+          "Img": "./images/weapon/DMR/dmr_mini14.png",
+          "Gun": "Mini 14",
+          "Bullet": "5.56mm"
+        },
+        {
+          "Img": "./images/weapon/DMR/dmr_sks.png",
+          "Gun": "SKS",
+          "Bullet": "7.62mm"
+        },
+        {
+          "Img": "./images/weapon/DMR/dmr_slr.png",
+          "Gun": "SLR",
+          "Bullet": "7.62mm"
+        },
+        {
+          "Img": "./images/weapon/DMR/dmr_vss.png",
+          "Gun": "VSS",
+          "Bullet": "9mm"
+        },
+        {
+          "Img": "./images/weapon/DMR/dmr_mk12.png",
+          "Gun": "MK12",
+          "Bullet": "5.56mm"
+        },
+        {
+          "Img": "./images/weapon/DMR/dmr_mk14.png",
+          "Gun": "MK14",
+          "Bullet": "7.62mm"
+        },    
+        {
+          "Img": "./images/weapon/DMR/dmr_qbu88.png",
+          "Gun": "QBU99",
+          "Bullet": "5.56mm"
+        }     
+    ],
+
+    "wp_SMG": [
+        {
+          "Img": "./images/weapon/SMG/smg_vector.png",
+          "Gun": "Vector",
+          "Bullet": "9mm"
+        },
+        {
+          "Img": "./images/weapon/SMG/smg_micro_uzi.png",
+          "Gun": "Micro UZI",
+          "Bullet": "9mm"
+        },
+        {
+          "Img": "./images/weapon/SMG/smg_tommy_gun.png",
+          "Gun": "토미건",
+          "Bullet": ".45 ACP"
+        },
+        {
+          "Img": "./images/weapon/SMG/smg_pp19_bizon.png",
+          "Gun": "PP-19 Bizon",
+          "Bullet": "9mm"
+        },
+        {
+          "Img": "./images/weapon/SMG/smg_js9.png",
+          "Gun": "JS9",
+          "Bullet": "9mm"
+        },     
+        {
+          "Img": "./images/weapon/SMG/smg_ump45.png",
+          "Gun": "UMP45",
+          "Bullet": ".45 ACP"
+        },
+        {
+          "Img": "./images/weapon/SMG/smg_p90.png",
+          "Gun": "P90",
+          "Bullet": "5.7mm"
+        },     
+        {
+          "Img": "./images/weapon/SMG/smg_mp5k.png",
+          "Gun": "MP5K",
+          "Bullet": "9mm"
+        },
+        {
+          "Img": "./images/weapon/SMG/smg_mp9.png",
+          "Gun": "MP9",
+          "Bullet": "9mm"
+        }     
+    ],
+
+    "wp_SR": [
+        {
+          "Img": "./images/weapon/SR/sr_awm.png",
+          "Gun": "AWM",
+          "Bullet": ".300 매그넘"
+        },
+        {
+          "Img": "./images/weapon/SR/sr_kar98k.png",
+          "Gun": "Kar98k",
+          "Bullet": "7.62mm"
+        },
+        {
+          "Img": "./images/weapon/SR/sr_lynx_amr.png",
+          "Gun": "링스 AMR",
+          "Bullet": "50구경 탄환"
+        },
+        {
+          "Img": "./images/weapon/SR/sr_m24.png",
+          "Gun": "M24",
+          "Bullet": "7.62mm"
+        },
+        {
+          "Img": "./images/weapon/SR/sr_mosin_nagant.png",
+          "Gun": "모신 나강",
+          "Bullet": "7.62mm"
+        },     
+        {
+          "Img": "./images/weapon/SR/sr_win94.png",
+          "Gun": "Win94",
+          "Bullet": ".45 ACP"
+        }
+    ],
+
+    "wp_throw": [
+        {
+          "Img": "./images/weapon/throw/thr_frag_grenade.png",
+          "Gun": "수류탄",
+          "Bullet": "&nbsp;"
+        },
+        {
+          "Img": "./images/weapon/throw/thr_molotov_cocktail.png",
+          "Gun": "화염병",
+          "Bullet": "&nbsp;"
+        },
+        {
+          "Img": "./images/weapon/throw/thr_stun_grenade.png",
+          "Gun": "섬광탄",
+          "Bullet": "&nbsp;"
+        },
+        {
+          "Img": "./images/weapon/throw/thr_smoke_grenade.png",
+          "Gun": "연막탄",
+          "Bullet": "&nbsp;"
+        },
+        {
+          "Img": "./images/weapon/throw/thr_bz_grenade.png",
+          "Gun": "블루존 수류탄",
+          "Bullet": "&nbsp;"
+        },     
+        {
+          "Img": "./images/weapon/throw/thr_decoy_grenade.png",
+          "Gun": "교란 수류탄",
+          "Bullet": "&nbsp;"
+        },     
+        {
+          "Img": "./images/weapon/throw/thr_sticky_bomb.png",
+          "Gun": "점착 폭탄",
+          "Bullet": "&nbsp;"
+        },     
+        {
+          "Img": "./images/weapon/throw/thr_c4.png",
+          "Gun": "C4",
+          "Bullet": "&nbsp;"
+        }
+    ],
+    "wp_etc": [
+      {
+        "Img": "./images/weapon/etc/etc_pan.png",
+        "Gun": "프라이팬",
+        "Bullet": "&nbsp;"
+      },
+      {
+        "Img": "./images/weapon/etc/etc_machete.png",
+        "Gun": "마체테",
+        "Bullet": "&nbsp;"
+      },
+      {
+        "Img": "./images/weapon/etc/etc_crowbar.png",
+        "Gun": "쇠지렛대",
+        "Bullet": "&nbsp;"
+      },
+      {
+        "Img": "./images/weapon/etc/etc_sickle.png",
+        "Gun": "낫",
+        "Bullet": "&nbsp;"
+      },
+      {
+        "Img": "./images/weapon/etc/etc_pickaxe.png",
+        "Gun": "곡괭이",
+        "Bullet": "&nbsp;"
+      },     
+      {
+        "Img": "./images/weapon/etc/etc_panzerfaust.png",
+        "Gun": "판처파우스트",
+        "Bullet": "&nbsp;"
+      },     
+      {
+        "Img": "./images/weapon/etc/etc_mortar.png",
+        "Gun": "박격포",
+        "Bullet": "60mm 박격포탄"
+      },     
+      {
+        "Img": "./images/weapon/etc/etc_stun_gun.png",
+        "Gun": "Stun Gun",
+        "Bullet": "&nbsp;"
+      }
+  ]
+}
