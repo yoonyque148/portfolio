@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-오시는길</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content4.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/76a37e14a5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a3455bbcc2fa190ea5dcb9e59e47c874"></script>
+    <script src="./js/map.js"></script>
+</head>
+<body>
+
+    <? include '../common/sub_header.html' ?>
+
+        <div class="visual">
+            <img src="./common/images/visual.jpg" alt="">
+            <span data-aos="fade-up">회 사 소 개</span>
+        </div>
+        
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub1_1.html">기업소개</a></li>
+                <li><a href="./sub1_2.html">비전&미션</a></li>
+                <li><a href="./sub1_3.html">연혁</a></li>
+                <li><a href="#" class="current">오시는길</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="line_map">
+                홈 : 회사소개 &gt; <strong>오시는길</strong>
+            </div>
+            <div class="title_area" data-aos="fade-down">
+                <h2>오시는길</h2>
+            </div>
+
+            <div class="content_area" data-aos="fade-up">
+                <h3>Location Info</h3>
+                <div class="map_api">
+                    <div id="map">
+                    <!-- 여기에 카카오 지도 삽입 -->
+                    </div>
+                </div> 
+                
+                <div class="map_left" data-aos="fade-right" data-aos-delay="200">
+                    <p class="p1">The Shilla</p>
+                    <p>서울특별시 중구 동호로 249 (우편번호 : 04605)</p>
+                    <p><span>TEL.</span> 02-2233-3131</p>
+                </div>
+
+                <div class="map_right" data-aos="fade-left" data-aos-delay="600">
+                    <div class="car">
+                        <span class="material-symbols-rounded">
+                            directions_car
+                            </span>
+                        <p>자차 이용시</p>
+                        <dl>
+                            <dt>분당 방면</dt>
+                            <dd>한남대교 → 장충단길 → 신라호텔 후문 → 서울신라호텔</dd>
+                        
+                            <dt>강남 방면</dt>
+                            <dd>동호대교 → 장충체육관 앞 사거리에서 비보호 좌회전 → 서울신라호텔</dd>
+                        
+                            <dt>용산 방면</dt>
+                            <dd>남산2호터널 통과 후 좌회전 → 신라호텔 후문 → 서울신라호텔</dd>
+                        </dl>
+                       
+                    </div>
+                    
+                    <div class="bus" data-aos="fade-left" data-aos-delay="400">
+                        <span class="material-symbols-rounded">
+                            directions_bus
+                            </span>
+                        <p>버스 이용시</p>
+                        <dl>
+                            <dt>장충체육관 앞 하차</dt>
+                            <dd>버스 번호  ( 144 / 301 / 7212 )</dd>
+                        
+                            <dt>셔틀버스 운행</dt>
+                            <dd>서울신라호텔 정문(기와문)에서 호텔 로비와 면세점까지 무료 관내 셔틀 운행</dd>
+                    
+                            <dt>운행 코스</dt>
+                            <dd>서울신라호텔 로비 → 신라면세점 → 호텔 고객 주차장 → 서울신라호텔 정문</dd>
+                    
+                            <dt>운행 시간</dt>
+                            <dd>08:00 ~ 22:00 (수시 운행)</dd>
+                        </dl>  
+                        <em>
+                            ※ 교통상황에 따라 셔틀 운행 시간이 변동될 수 있습니다. <br>
+                            ※ 고객 안전을 위하여 정원 초과 시 탑승이 제한될 수 있습니다.
+                        </em>
+                    </div>                              
+                   
+                    <div class="subway" data-aos="fade-left">
+                        <span class="material-symbols-rounded">
+                            directions_subway
+                            </span>
+                        <p>지하철 이용시</p>
+                        <dl>
+                            <dt>3호선 동대입구역</dt>
+                            <dd>5번출구 → 도보로 7분</dd>
+                        </dl>
+                    </div>
+                     
+                    
+                </div>
+            </div>
+        </article>
+
+    <? include '../common/sub_footer.html' ?>
+        
+</body>
+</html>

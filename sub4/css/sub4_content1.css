@@ -1,0 +1,152 @@
+#content .title_area h2::before{content: 'Ethical Management'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* 윤리경영의 본문 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;  }
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2.5rem; color:#8E684C; text-align:center; font-weight: 600;}
+.content_area .p1{font-size: 1.56rem; color:#555; text-align:center; width: 1370px; margin: 0 auto; margin-top: 50px; margin-bottom: 150px; line-height: 2.8rem; }
+
+
+.content_area .full_bg {
+    width: 2000px; height: 280px;
+    background: url(../images/content1/full_img.jpg) no-repeat; 
+    background-attachment: fixed;
+    margin: 0 auto;
+    padding: 140px 0 140px;
+}
+.content_area .full_bg .bg_text{
+    width: 1200px; margin: 0 auto;
+    color: #fff;
+}
+.content_area .full_bg .bg_text h4{
+    font-size: 2.5rem;
+}
+.content_area .full_bg .bg_text p:nth-of-type(1){
+    font-size: 1.56rem;
+    line-height: 2.6rem;
+    width: 720px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    margin: 25px 0 30px;
+}
+.content_area .full_bg .bg_text p:nth-of-type(2){
+    font-size: 1.13rem;
+    line-height: 2rem;
+    width: 1000px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+
+/* 경영원칙 리스트 */
+
+.content_area .ethical{width: 1200px; margin: 150px auto;}
+
+.content_area .ethical h5{
+    font-size: 1.75rem;
+    color: #8E684C;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0 20px 50px;
+    position: relative;
+}
+.content_area .ethical h5::before{
+    content: ''; display: block;
+    width: 10px; height: 80px;
+    background: #8E684C;
+    position: absolute; left: 0; top: 0;
+}
+.content_area .ethical ul{
+    margin-bottom: 150px;
+}
+.content_area .ethical ul li{
+    position: relative;
+}
+.content_area .ethical ul li a{
+    font-size: 1.38rem;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0 15px 80px;
+}
+.content_area .ethical ul li:first-child a{
+    border-top: 0px solid #ccc;
+}
+
+
+.content_area .ethical ul li a span.num{
+    color: #555;
+}
+.content_area .ethical ul li a span.tit{
+    margin-left: 20px;;
+}
+.content_area .ethical ul li a .material-symbols-outlined{
+    display: inline-block;
+    position: absolute; right: 0; top: 0;
+    padding: 15px;
+    font-size: 2rem;
+    color: #999;
+} 
+.content_area .ethical ul li .text{
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+    color: #555;
+    background: #F5F5F5;
+    padding: 30px 0 30px 80px;
+    display: none;
+}
+
+
+
+
+/* 가이드라인  */
+
+.content_area .guideline{
+    width: 100%;
+    background: #F5F5F5;
+    padding: 140px 0;
+}
+.content_area .guide_content{
+    width: 1200px; margin: 0 auto;
+}
+.content_area .guideline h4{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.content_area .guideline p{
+    font-size: 1.56rem;
+    line-height: 2.8rem;
+    text-align: center;
+    width: 1000px; margin: 0 auto;
+}
+.content_area .guideline table{
+    width: 1200px;
+    text-align: center;
+    margin-top: 100px;
+    border-top: 3px solid #777;
+    border-bottom: 3px solid #777;
+}
+.content_area .guideline table tr{
+    border-top: 1px solid #999;
+}
+.content_area .guideline table thead{
+    background: #EBF0F2;
+}
+.content_area .guideline table thead th{
+    font-size: 1.56rem;
+    font-weight: 600;
+    padding: 35px 20px;
+}
+.content_area .guideline table tbody{
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+.content_area .guideline table tbody td strong{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 25px 20px;
+}
+.content_area .guideline table tbody td{
+    font-size: 1.13rem;
+    padding: 25px 20px;
+}

@@ -1,0 +1,449 @@
+
+/* 구글 아이콘 */
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+
+
+/* 브랜드 소개 - 신라호텔 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;}
+.content_area .brand_title img{
+    position: relative; left: 50%; top: 0;
+    transform: translateX(-50%);
+}
+.content_area .brand_title  h3{
+    font-family:"Noto Serif KR" ; font-size: 2.5rem; 
+    color:#423124; text-align:center; font-weight: 600;
+    margin-top: 70px;
+}
+.content_area .brand_title span:nth-child(3){
+    font-size: 1.38rem; text-align:center; 
+    color: #FFCCA8; display: block; margin: 15px 0 35px;
+}
+.content_area .brand_title .p1{
+    font-size: 1.56rem; color:#555; text-align:center;
+    width: 950px; margin: 0 auto; 
+    margin-bottom: 100px; line-height: 2.8rem;
+}
+.content_area hr:nth-child(2){
+    width: 1200px;
+    background:#d9d9d9; 
+    height:1px; 
+    border:0; 
+    margin-bottom: 100px;
+}
+.content_area hr:nth-child(4){
+    background:#d9d9d9; 
+    height:1px; 
+    border:0;
+}
+
+/* 브랜드 소개 */
+.brand_intro{width: 1200px; margin: 0 auto;}
+.brand_intro ul{overflow: hidden;}
+.brand_intro ul li .intro_tit{
+    font-size: 1.88rem; 
+    font-weight: 600; 
+    line-height: 3.2rem;
+    color: #8E684C;
+    width: 230px;
+    display: block;
+    float: left;
+}
+.brand_intro ul li .intro_right{
+    width: 970px;
+    display:inline-block;
+    margin-bottom: 120px;
+}
+.brand_intro ul li .intro_right .p2{
+    font-family:"Noto Serif KR";
+    font-size: 1.56rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.brand_intro ul li .intro_right p{
+    font-size: 1.38rem; 
+    line-height: 2.5rem;
+    margin-bottom: 60px;
+}
+.brand_intro ul li .intro_right p:nth-child(2){
+    margin-bottom: 0;
+}
+
+/* table code */
+.brand_intro ul li .intro_right table{
+    font-size: 1.13rem;
+    color: #555;
+    width: 960px;
+    border-collapse: collapse;
+}
+.brand_intro ul li .intro_right table th{
+    font-weight: normal;
+}
+.brand_intro ul li .intro_right table th,
+.brand_intro ul li .intro_right table td{
+    padding: 20px 30px;
+}
+.brand_intro ul li .intro_right table thead tr{
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+}
+.brand_intro ul li .intro_right table tbody tr{
+    border-bottom: 1px solid #d9d9d9;
+}
+.brand_intro ul li .intro_right table tbody th{
+    width: 310px;
+    background: #FFF8F2;
+}
+.brand_intro ul li .intro_right table tbody span{
+    color: #8E684C;
+    text-align: center;
+    font-size: 1.7rem;
+    display: block;
+}
+
+/* guideline code */
+.brand_intro ul li .intro_right .guideline{
+    display: flex;
+    justify-content: space-between;
+}
+.brand_intro ul li .intro_right .guideline dl dt span{
+    font-size: 3.5rem;
+    text-align: center;
+    color: #8E684C;
+    background: #FFF8F2;
+    border-radius: 50%;
+    padding: 30px;
+    font-weight: 200;
+}
+.brand_intro ul li .intro_right .guideline dl dd{
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* 서울신라호텔 섹션 */
+
+#seoul .seoul1{width: 1200px; margin: 0 auto;}
+#seoul .seoul1 h4{
+    font-size: 2.19rem;
+    color: #423124; 
+    margin-top: 170px; 
+    position: relative;
+}
+#seoul .seoul1 h4::before{
+    content: '01'; display: block;
+    font-family: 'Montserrat';
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffcca851;
+    position: absolute; left: 0; bottom: 5px;
+    z-index: -1;
+}
+#seoul .seoul1 span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.88rem;
+    font-weight: 500;
+    color: #8E684C;
+    display: block;
+    margin: 20px 0 20px;
+}
+#seoul .seoul1 p:last-child{
+    font-size: 1.38rem;
+    line-height: 2.5rem;
+    color: #555;
+    margin-bottom: 150px;
+}
+
+/* 서울신라호텔 갤러리 */
+#seoul .seoul_content{width: 2000px; height: 910px;
+    position: relative; left: 50%;
+    transform: translateX(-50%);
+    background: #F5F5F5;
+}
+
+#seoul .seoul_content .seoul_con1{
+    width: 1200px; height: 700px; margin: 0 auto;
+    position: relative;
+}
+#seoul .seoul_content .seoul_con1 .text{
+    width: 550px;
+}
+#seoul .seoul_content .text span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.56rem;
+    font-weight: 600;
+    display: block;
+    padding: 100px 0 40px;
+}
+#seoul .seoul_content .text p{
+    width: 500px;
+    font-size: 1.38rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+#seoul .seoul_content .gallery_big{
+    width: 1000px; height: 700px;
+    position: absolute; right: -400px; top: 0;
+}
+#seoul .seoul_content .seoul_con2 {
+    width: 2000px; margin: 0 auto;
+    position: relative;
+}
+#seoul .seoul_content .seoul_con2 ul.gallery{
+    width: 2000px; margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#seoul .seoul_content .seoul_con2 ul.gallery li a{
+}
+#seoul .seoul_content .seoul_con2 img{
+    filter:brightness(50%);
+    transition: all .3s ease-out;
+}
+#seoul .seoul_content .seoul_con2 img:hover{
+    filter:brightness(100%);
+}
+
+#seoul .seoul_content .galleryBtn{
+    position: absolute; left: 810px; top: -90px;
+    overflow: hidden;
+}
+#seoul .seoul_content .galleryBtn a{
+    width: 35px; height: 35px;
+    border: 1px solid #b0b0b0;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden; 
+    padding: 14px;
+    transition: all .3s ease-out;
+}
+#seoul .seoul_content .galleryBtn a:hover{
+    border: 1px solid #8E684C;
+}
+#seoul .seoul_content .galleryBtn a:nth-child(1){
+    float: left; margin-right: 10px;
+}
+#seoul .seoul_content .galleryBtn a span{
+    font-size: 2rem;
+    color: #b0b0b0;
+    text-align: center;
+}
+#seoul .seoul_content .galleryBtn a:hover span{
+    color: #8E684C;
+    text-align: center;
+}
+#seoul .seoul_content .galleryBtn .next span{
+    margin: 2px 0 0 3px ; 
+}
+#seoul .seoul_content .galleryBtn .prev span{
+   margin: 2px 0 0 0;
+}
+
+#seoul .seoul_content .seoul_link{
+    border: 1px solid #8E684C;
+    border-radius: 40px;
+    position: absolute; left: 400px; top: 500px;
+    padding: 12px 50px 15px 40px;
+    transition: all .4s ease-out;
+}
+#seoul .seoul_content .seoul_link span:nth-child(1){
+    color: #8E684C;
+    font-size: 1.25rem;
+}
+#seoul .seoul_content .seoul_link .material-symbols-rounded{
+    color: #8E684C;
+    transform: translateY(4px) translateX(3px);
+    transition: all .4s ease-out;
+    transition-delay: .2s;
+}
+
+#seoul .seoul_content .seoul_link:hover {
+   background: #8E684C;
+}
+#seoul .seoul_content .seoul_link:hover span{
+    color: #fff;
+}
+#seoul .seoul_content .seoul_link:hover .material-symbols-rounded{
+    transform: translateY(4px) translateX(17px);
+}
+
+
+
+
+
+/* 제주신라호텔 섹션 */
+
+#jeju .jeju1{width: 1200px; margin: 0 auto;}
+#jeju .jeju1 h4{
+    font-size: 2.19rem;
+    color: #423124; 
+    margin-top: 170px; 
+    position: relative;
+}
+#jeju .jeju1 h4::before{
+    content: '02'; display: block;
+    font-family: 'Montserrat';
+    font-size: 5rem;
+    font-weight: 600;
+    color: #ffcca851;
+    position: absolute; left: 0; bottom: 5px;
+    z-index: -1;
+}
+#jeju .jeju1 span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.88rem;
+    font-weight: 500;
+    color: #8E684C;
+    display: block;
+    margin: 20px 0 20px;
+}
+#jeju .jeju1 p:last-child{
+    font-size: 1.38rem;
+    line-height: 2.5rem;
+    color: #555;
+    margin-bottom: 150px;
+}
+
+/* 제주신라호텔 갤러리 */
+#jeju .jeju_content{width: 2000px; height: 1100px;
+    position: relative; left: 50%;
+    transform: translateX(-50%);
+    background: #F5F5F5;  
+}
+
+#jeju .jeju_content .jeju_con1{
+    width: 1200px; height: 700px; margin: 0 auto;
+    position: relative;
+}
+#jeju .jeju_content .jeju_con1 .text{
+    width: 550px;
+}
+#jeju .jeju_content .text span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.56rem;
+    font-weight: 600;
+    display: block;
+    padding: 100px 0 40px;
+}
+#jeju .jeju_content .text p{
+    width: 500px;
+    font-size: 1.38rem;
+    line-height: 2.5rem;
+    text-align: justify;
+}
+#jeju .jeju_content .gallery2_big{
+    width: 1000px; height: 700px;
+    position: absolute; right: -400px; top: 0;
+}
+#jeju .jeju_content .jeju_con2 {
+    width: 2000px; margin: 0 auto;
+    position: relative;
+}
+#jeju .jeju_content .jeju_con2 ul.gallery2{
+    width: 2000px; margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#jeju .jeju_content .jeju_con2 img{
+    filter:brightness(50%);
+    transition: all .3s ease-out;
+}
+#jeju .jeju_content .jeju_con2 img:hover{
+    filter:brightness(100%);
+}
+
+
+#jeju .jeju_content .gallery2Btn{
+    position: absolute; left: 810px; top: -90px;
+    overflow: hidden;
+}
+#jeju .jeju_content .gallery2Btn a{
+    width: 35px; height: 35px;
+    border: 1px solid #b0b0b0;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden; 
+    padding: 14px;
+    transition: all .3s ease-out;
+}
+#jeju .jeju_content .gallery2Btn a:hover{
+    border: 1px solid #8E684C;
+}
+#jeju .jeju_content .gallery2Btn a:nth-child(1){
+    float: left; margin-right: 10px;
+}
+#jeju .jeju_content .gallery2Btn a span{
+    font-size: 2rem;
+    color: #b0b0b0;
+    text-align: center;
+}
+#jeju .jeju_content .gallery2Btn a:hover span{
+    font-size: 2rem;
+    color: #8E684C;
+    text-align: center;
+}
+#jeju .jeju_content .gallery2Btn .prev span{
+    margin: 2px 0 0 -2px ; 
+}
+#jeju .jeju_content .gallery2Btn .next span{
+   margin: 2px 0 0 5px;
+}
+
+#jeju .jeju_content .jeju_link{
+    border: 1px solid #8E684C;
+    border-radius: 40px;
+    position: absolute; left: 400px; top: 500px;
+    padding: 12px 50px 15px 40px;
+    transition: all .4s ease-out;
+}
+#jeju .jeju_content .jeju_link span:nth-child(1){
+    color: #8E684C;
+    font-size: 1.25rem;
+}
+#jeju .jeju_content .jeju_link .material-symbols-rounded{
+    color: #8E684C;
+    transform: translateY(4px) translateX(3px);
+    transition: all .4s ease-out;
+    transition-delay: .2s;
+}
+
+#jeju .jeju_content .jeju_link:hover {
+   background: #8E684C;
+}
+#jeju .jeju_content .jeju_link:hover span{
+    color: #fff;
+}
+#jeju .jeju_content .jeju_link:hover .material-symbols-rounded{
+    transform: translateY(4px) translateX(17px);
+}

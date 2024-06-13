@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shilla</title>
+
+    <link rel="shortcut icon" type="image/x-icon"  href="./favicon.ico">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/mainlayout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/76a37e14a5.js" crossorigin="anonymous"></script>
+    <script src="./mainjs/mainpopup.js"></script>
+</head>
+<body>
+
+    <!-- 메인 인덱스 헤더 불러오는 php  -->
+    <? include './common/main_header.html' ?>
+
+        <div class="visual">
+            <div class="gallery">
+                <ul>
+                     <li class="link1"><img src="./mainimages/visual1.jpg" alt=''><span>일상이<br>최고의 순간이 되는 곳</span></li>
+                     <li class="link2"><img src="./mainimages/visual2.jpg" alt=''><span>시간이 흐를수록<br>빛나는 가치</span></li>
+                     <li class="link3"><img src="./mainimages/visual3.jpg" alt=''><span>삶의 여유와<br>품격을 담다</span></li>
+                </ul> 
+            </div>
+      
+            <div class="dock">
+                <span class="mbutton btn1"></span>
+                <span class="mbutton btn2"></span>
+                <span class="mbutton btn3"></span>
+                <span class="ps"><span class="hidden">stop</span>
+                <span class="material-symbols-rounded">
+                    pause_circle
+                    </span></span>
+            </div>
+       
+            <!-- <span class="btn btnLeft">left</span>
+            <span class="btn btnRight">right</span> -->
+        </div>
+
+        <article id="content">
+            <h2 class="hidden">본문 컨텐츠 영역</h2>
+
+            <section class="company" data-aos="fade-right" data-aos-duration="600" data-aos-duration="800">
+                <h3>회사소개</h3>
+                    <p class="p1">The Best<br>Hospitality Company</p>
+
+                    <div class="company_container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                        <div class="company_con">
+                            <p class="p2">호텔신라는 한국을 대표하는<br> 서비스 기업으로서 고객만족과<br> 기업가치 극대화를 목표를 하고 있습니다.</p>
+                            <ul data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="company_img">
+                                <li><a href="#"><img src="./mainimages/company_s1.jpg" alt="img_btn1"></a></li>
+                                <li><a href="#"><img src="./mainimages/company_s2.jpg" alt="img_btn2"></a></li>
+                                <li><a href="#"><img src="./mainimages/company_s3.jpg" alt="img_btn3"></a></li>
+                                <li><a href="#"><img src="./mainimages/company_s4.jpg" alt="img_btn4"></a></li>
+                            </ul>
+                        </div>
+                        <div  class="comp_img" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600"></div>
+                        <a class="more" href="./sub1/sub1_1.html">자세히보기</a>
+                    </div>
+            </section>
+
+            <section class="business">
+                <div class="business_container" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" >
+                    <h3>사업영역</h3>
+                    <p class="p1">최고의 품격과 신뢰를 바탕으로 고객이 꿈꾸는 라이프 스타일을 제공합니다.</p>
+                    <div class="business_menu">
+                        <ul>
+                            <li>
+                                <span>01 Hospitality Business</span>
+                                <h4>호텔 사업</h4>         
+                            </li>
+                            <li>
+                                <span>02 Travel Retailer</span> 
+                                <h4>TR 사업</h4>
+                            </li>
+                            <li>
+                                <span>03 Smart Healthcare</span>
+                                <h4>SHP 사업</h4>
+                            </li>
+                            <li>
+                                <span>04 Travel Management</span>    
+                                <h4>SBTM 사업</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="business_text" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+                        <img src="./mainimages/business1.jpg" alt="">
+                        <dl data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                            <dt>호텔 사업</dt>
+                            <dd>
+                                한국 전통이라는 지붕 위에 모더니즘적 디자인 요소를 가미하여,삶에 여유와 품격을 한층 높여주는 프리미엄 라이프스타일 공간으로 변화를 거듭해 나가고 있습니다.
+                            </dd>
+                            <dd><a href="./sub2/sub2_1.html">더보기</a></dd>
+                        </dl>  
+                    </div>
+                </div>
+            </section>
+
+            <section class="brand" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                <div class="brand_container">
+                    <div class="brand_tit" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
+                      <h3>브랜드소개</h3>
+                      <p class="p1">
+                          호텔 신라로부터<br>시작되는 전통의 가치와<br>신뢰의 품격을 갖춘<br>브랜드를 소개합니다.<br>
+                      </p>                    
+                    </div>
+                    <div class="brand_con" data-aos="fade-up" data-aos-delay="1000">
+                        <ul>
+                            <li>
+                                <img src="./mainimages/logo1.png" alt="신라호텔">
+                                <h4>신라호텔</h4>
+                                <a href="./sub3/sub3_1.html" title=""><span class="material-symbols-outlined">
+                                    expand_circle_right</span></a>
+                                <p>시대를 아우르는 모던함을 가진<br>
+                                    럭셔리 라이프 스타일 브랜드입니다.</p>                                
+                            </li>
+                            <li>
+                                <img src="./mainimages/logo2.png" alt="신라모노그램">
+                                <h4>신라모노그램</h4>
+                                <a href="./sub3/sub3_2.html" title=""><span class="material-symbols-outlined">
+                                    expand_circle_right</span></a>
+                                <p>지역, 환경과 신라만의 세심함을<br>
+                                    조화롭게 추구하는 브랜드입니다.
+                                </p>                               
+                            </li>
+                            <li>
+                                <img src="./mainimages/logo3.png" alt="신라스테이">
+                                <h4>신라스테이</h4>
+                                <a href="./sub3/sub3_3.html" title=""><span class="material-symbols-outlined">
+                                    expand_circle_right</span></a>
+                                <p>신라만의 가치를 실용성 있고,<br>
+                                    합리적으로 경험할 수 있는 브랜드입니다.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="./mainimages/logo4.png" alt="신라면세점">
+                                <h4>신라면세점</h4>
+                                <a href="./sub3/sub3_4.html" title=""><span class="material-symbols-outlined">
+                                    expand_circle_right</span></a>
+                                <p>최고의 쇼핑 경험은 물론이고<br>
+                                    신라의 차별화된 서비스의 브랜드입니다.
+                                </p>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="social" data-aos="zoom-out" data-aos-delay="100" data-aos-duration="800">
+                <h3>사회공헌</h3>
+                <p class="p1">
+                    호텔신라의 기품 있고 세심한 서비스 정신은 지역사회의 어려운 이웃과 함께할 때 더욱 빛을 발합니다.
+                </p>
+                <div class="social_con" data-aos="flip-left" data-aos-delay="300" data-aos-duration="800">
+                    <img src="./mainimages/social.jpg" alt="">
+                    <div class="social_box">
+                        <h4>맛있는 제주 만들기</h4>
+                        <p>영세 자영업자 분들을 응원합니다!</p>
+                        <a href="./sub6/sub6_1.html">더보기</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="career" data-aos="fade-down" data-aos-delay="200" data-aos-duration="600">
+                <div class="career_container" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000">
+                    <h3>인재채용</h3>
+                    <p>호텔신라에서는 변화를 지향하고 미래에 도전하는 당신을 기다립니다.<br>고객을 위한 마음 하나면 충분합니다.</p>
+                    <a href="./sub5/sub5_1.html">바로가기</a>
+                </div>
+            </section>
+        </article>
+
+         <!-- 메인 인덱스 푸터.html 불러오는 php  -->
+         <? include './common/main_footer.html' ?>
+
+    <script src="./mainjs/main.js"></script>    
+    <script src="./mainjs/move.js"></script> 
+    <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+    </script>
+
+    <!-- 메인 팝업 (광고/이벤트/공지) -->
+    <div id="showimage" style="z-index:90; position:absolute; width: 322px; left:50%; top:300px; margin-left: 300px; ">
+        <script>
+          function closeWin(){
+             var chk = document.getElementById('Notice')
+            if ( chk.checked ) {
+                setCookie( "Notice", "done" , 1); 
+                //1이란 숫자는 1일간 안보임을 뜻합니다. 날짜는 자신에 맞게 수정하세요
+            }
+            }
+            if ( getCookie( "Notice" ) == "done" ) {
+                hidebox();
+            }
+        </script>
+          <div>
+            <img src="./popup/popup.png" alt="본 사이트는 상업적 목적이 아닌 개인 포트폴리오 용도로 만들어졌습니다. 홈페이지의 일부 내용과 기타 이미지 등은 그 출처가 따로 있음을 밝힙니다.">
+          </div>
+           <div style="font-size:12px;text-align:center;color:#fff;">
+             <input type="checkbox" name="Notice" id="Notice" value="" title="오늘은 이창을 열지 않음 선택상자"><label for="Notice">오늘은 이창을 열지 않음</label>
+           <a href="#" style="color: #fff;" onclick="closeWin();hidebox();return false;"> [close] </a>
+        </div>
+    </div>
+        
+</body>
+</html>

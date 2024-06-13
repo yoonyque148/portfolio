@@ -1,0 +1,346 @@
+
+/* 구글 아이콘 */
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+
+/* 브랜드 소개 - 신라모노그램 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;}
+.content_area .brand_title img{
+    position: relative; left: 50%; top: 0;
+    transform: translateX(-50%);
+}
+.content_area .brand_title h3{
+    font-family:"Noto Serif KR" ; font-size: 2.5rem; 
+    color:#423124; text-align:center; font-weight: 600;
+    margin-top: 70px;
+}
+.content_area .brand_title span:nth-child(3){
+    font-size: 1.38rem; text-align:center; 
+    color: #FFCCA8; display: block; margin: 15px 0 35px;
+}
+.content_area .brand_title .p1{
+    font-size: 1.56rem; color:#555; text-align:center;
+    width: 1000px; margin: 0 auto; 
+    margin-bottom: 100px; line-height: 2.8rem;
+}
+.content_area hr:nth-child(2){
+    width: 1200px;
+    background:#d9d9d9; 
+    height:1px; 
+    border:0; 
+    margin-bottom: 100px;
+}
+.content_area hr:nth-child(4){
+    background:#d9d9d9; 
+    height:1px; 
+    border:0;
+}
+
+/* 브랜드 소개 */
+.brand_intro{width: 1200px; margin: 0 auto;}
+.brand_intro ul{overflow: hidden;}
+.brand_intro ul li .intro_tit{
+    font-size: 1.88rem; 
+    font-weight: 600; 
+    line-height: 3.2rem;
+    color: #8E684C;
+    width: 230px;
+    display: block;
+    float: left;
+}
+.brand_intro ul li .intro_right{
+    width: 970px;
+    display:inline-block;
+    margin-bottom: 120px;
+}
+.brand_intro ul li .intro_right .p2{
+    font-family:"Noto Serif KR";
+    font-size: 1.56rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.brand_intro ul li .intro_right p{
+    font-size: 1.38rem; 
+    line-height: 2.5rem;
+    margin-bottom: 60px;
+}
+.brand_intro ul li .intro_right p:nth-child(2){
+    margin-bottom: 0;
+}
+
+/* table code */
+.brand_intro ul li .intro_right table{
+    font-size: 1.13rem;
+    color: #555;
+    width: 960px;
+    border-collapse: collapse;
+}
+.brand_intro ul li .intro_right table th{
+    font-weight: normal;
+}
+.brand_intro ul li .intro_right table th,
+.brand_intro ul li .intro_right table td{
+    padding: 20px 30px;
+}
+.brand_intro ul li .intro_right table thead tr{
+    text-align: center;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 2px solid #d9d9d9;
+}
+.brand_intro ul li .intro_right table tbody tr{
+    border-bottom: 1px solid #d9d9d9;
+}
+.brand_intro ul li .intro_right table tbody th{
+    width: 310px;
+    background: #FFF8F2;
+}
+.brand_intro ul li .intro_right table tbody span{
+    color: #8E684C;
+    text-align: center;
+    font-size: 1.7rem;
+    display: block;
+}
+
+/* guideline code */
+.brand_intro ul li .intro_right .guideline{
+    display: flex;
+    justify-content: space-between;
+}
+.brand_intro ul li .intro_right .guideline dl dt span{
+    font-size: 3.5rem;
+    text-align: center;
+    color: #8E684C;
+    background: #FFF8F2;
+    border-radius: 50%;
+    padding: 30px;
+    font-weight: 200;
+}
+.brand_intro ul li .intro_right .guideline dl dd{
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* monogram 섹션 */
+
+#monogram .monogram{width: 1200px; margin: 0 auto;}
+#monogram .monogram h4{
+    font-size: 2.19rem;
+    color: #423124; 
+    margin-top: 170px; 
+    position: relative;
+}
+#monogram .monogram span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.88rem;
+    font-weight: 500;
+    color: #8E684C;
+    display: block;
+    margin: 20px 0 20px;
+}
+#monogram .monogram p:last-child{
+    font-size: 1.38rem;
+    line-height: 2.5rem;
+    color: #555;
+    margin-bottom: 150px;
+}
+
+#monogram .monogram_content{
+    width: 2000px; height: 2000px;
+    position: relative; left: 50%;
+    transform: translateX(-50%);
+    background: #F5F5F5;
+}
+#monogram .monogram_content .content{
+    width: 1200px; height: 1000px;
+}
+
+#monogram .monogram_content .monogram_con{
+    width: 1200px; height: 700px; margin: 0 auto; 
+    position: relative;
+}
+#monogram .monogram_content .monogram_con .text{
+    width: 370px; height: 400px;
+    margin-bottom: 50px;
+    float: left;
+    margin-right: 40px;
+}
+#monogram .monogram_content .text span{
+    font-family: 'Noto Serif KR';
+    font-size: 1.56rem;
+    font-weight: 600;
+    display: block;
+    padding: 150px 0 40px;
+}
+#monogram .monogram_content .text p{
+    width: 240px;
+    font-size: 1.38rem;
+    line-height: 2.5rem;
+}
+
+#monogram .monogram_content .monogram_con ul.box li{
+    width: 370px; height: 400px;
+    border-top: 5px solid #C8A992;
+    border-bottom: 1px solid #C8A992;
+    margin: 0 40px 60px 0;
+    transition: all .4s ease-out;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#monogram .monogram_content .monogram_con ul.box li:hover{
+    width: 370px; height: 400px;
+    border-top: 5px solid #302821;
+    border-bottom: 1px solid #302821;
+}
+
+#monogram .monogram_content .monogram_con ul.box li img{
+    position: absolute; left: 0; top: 0;
+    transition: all .5s ease;
+    opacity: 0;
+    z-index: -10;
+}
+#monogram .monogram_content .monogram_con ul.box li:hover img{
+    opacity: 1;
+}
+
+#monogram .monogram_content .monogram_con ul.box li:nth-child(2),
+#monogram .monogram_content .monogram_con ul.box li:nth-child(5){
+    margin-right: 0;
+}
+
+#monogram .monogram_content .monogram_con ul.box li:nth-child(1),
+#monogram .monogram_content .monogram_con ul.box li:nth-child(2){
+    margin-top: 150px;
+}
+
+#monogram .monogram_content .monogram_con ul.box li dl dt{
+    width: 270px;
+    margin: 60px 0 0 50px;
+    font-size: 1.56rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #423124;
+    transform: translateY(120px);
+    transition: all .4s ease-out;
+}
+#monogram .monogram_content .monogram_con ul.box li:hover dl dt{
+    font-size: 1.56rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #fff;
+    transform: translateY(0);
+}
+#monogram .monogram_content .monogram_con ul.box li dl dd{
+    width: 270px;
+    margin-left: 50px;
+    font-size: 1.13rem;
+    text-align: justify;
+    line-height: 2rem;
+    opacity: 0;
+    color: #fff;
+    transform: translateY(100px);
+    transition: all .5s ease-out;
+}
+#monogram .monogram_content .monogram_con ul.box li:hover dl dd{
+    font-size: 1.13rem;
+    text-align: justify;
+    line-height: 2rem;
+    color: #fff;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .3s;
+}
+
+
+
+/* 갤러리 영역 */
+#monogram .monogram_content .gallery{
+    position: relative;
+    width: 1200px; height: 700px;
+    overflow: hidden;
+    clear: both;
+}
+#monogram .monogram_content .gallery .galleryImg{
+    width: 24000px;
+    overflow: hidden;
+    position: relative; left: 0; top: 0;    
+}
+#monogram .monogram_content .gallery .galleryImg ul{
+    float: left;
+}
+#monogram .monogram_content .gallery .galleryImg ul li{
+    width: 1200px; height: 700px;
+    float: left;
+}
+
+#monogram .monogram_content .gallery .galleryBtn{
+    display: flex;
+    justify-content: space-between;
+    position: relative; left: 0; bottom: 350px;
+    
+}
+#monogram .monogram_content .gallery .galleryBtn a{
+    background: #ffffffa8;
+    width: 70px; height: 70px;
+}
+#monogram .monogram_content .gallery .galleryBtn span{
+    font-size: 2rem;
+    padding: 18px;
+}
+
+
+
+#monogram .monogram_content .monogram_link{
+    border: 1px solid #8E684C;
+    border-radius: 40px;
+    position: absolute; left: 0; top: 350px;
+    padding: 12px 50px 15px 40px;
+    transition: all .4s ease-out;
+}
+#monogram .monogram_content .monogram_link span:nth-child(1){
+    color: #8E684C;
+    font-size: 1.25rem;
+}
+#monogram .monogram_content .monogram_link .material-symbols-rounded{
+    color: #8E684C;
+    transform: translateY(4px) translateX(3px);
+    transition: all .4s ease-out;
+    transition-delay: .2s;
+}
+
+#monogram .monogram_content .monogram_link:hover {
+   background: #8E684C;
+}
+#monogram .monogram_content .monogram_link:hover span{
+    color: #fff;
+}
+#monogram .monogram_content .monogram_link:hover .material-symbols-rounded{
+    transform: translateY(4px) translateX(17px);
+}

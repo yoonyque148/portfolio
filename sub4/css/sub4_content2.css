@@ -1,0 +1,186 @@
+#content .title_area h2::before{content: 'Compliance'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* 준법경영의 본문 내용 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;  }
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2.5rem; color:#8E684C; text-align:center; font-weight: 600;}
+.content_area .p1{font-size: 1.56rem; color:#555; text-align:center; width: 1300px; margin: 0 auto; margin-top: 50px; margin-bottom: 150px; line-height: 2.8rem; }
+.content_area .program {background: #f5f5f5; height: 970px; padding: 150px 0;}
+.content_area .program .text{text-align:center;}
+.content_area .program .text h4{
+    font-size: 2.5rem; 
+    text-align:center;
+    margin-bottom: 40px;
+}
+.content_area .program .text p{
+    font-size: 1.38rem; width: 1200px; margin: 0 auto;
+    line-height: 2.5rem;
+    margin-bottom: 40px;
+}
+.content_area .program dl{width: 1200px; margin: 0 auto;
+    position: relative;
+}
+.content_area .program dt{
+    width: 250px; height: 250px; 
+    position: absolute; left: 40%; top: 300px;
+    background: #8E684C; 
+    border-radius: 50%;
+}
+.content_area .program dt::before{
+    content: ''; display: block;
+    width: 550px; height: 550px;
+    position: absolute; top: -150px; left: -150px;
+    border: dotted 2px #ccc;
+    border-radius: 50%;
+}
+.content_area .program dt p{
+    margin-top: 80px;
+    font-weight: 600; 
+    font-size: 1.88rem;
+    text-align: center;
+    color: #fff;
+}
+.content_area .program dl dd{
+    width: 200px; height: 200px;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .08); 
+    transition: all .4s ease;
+}
+.content_area .program dl dd:hover {
+    transform: scale(1.05);
+}
+.content_area .program dl dd span{
+    display: block;
+    font-size: 1.56rem;
+    font-weight: 600;
+    color: #8E684C; 
+    text-align: center;
+    margin-top: 80px;
+}
+
+.content_area .program dl dd:nth-of-type(1){left: 505px; top: 30px;}
+.content_area .program dl dd:nth-of-type(2){left: 790px; top: 270px;}
+.content_area .program dl dd:nth-of-type(3){left: 700px; top: 570px;}
+.content_area .program dl dd:nth-of-type(4){left: 310px; top: 570px;}
+.content_area .program dl dd:nth-of-type(5){left: 210px; top: 270px;}
+
+
+.content_area .program2{width: 1200px; height: 600px; margin: 150px auto;}
+.content_area .program2 h4{
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-bottom: 40px;
+}
+.content_area .program2 .p2{
+    width: 1100px; margin: 0 auto;
+    font-size: 1.38rem;
+    text-align:center;
+    line-height: 2.5rem;
+}
+
+.content_area .program2 ul{margin: 70px auto 150px; 
+    position: relative; 
+}
+.content_area .program2 ul::before{
+    content: ''; display: block;
+    width: 1200px; height: 100px;
+    background: url(../images/content2/li.svg) 0 5px no-repeat;
+}
+.content_area .program2 ul li{
+    width: 220px;
+    box-sizing: border-box;
+    position: absolute;
+    float: left;
+}
+
+.content_area .program2 ul li:nth-of-type(1){left: 70px; bottom: -70px;}
+.content_area .program2 ul li:nth-of-type(2){left: 350px; bottom: -70px;}
+.content_area .program2 ul li:nth-of-type(3){left: 630px; bottom: -70px;}
+.content_area .program2 ul li:nth-of-type(4){left: 910px; bottom: -70px;}
+
+.content_area .program2 ul li span{
+    display: block;
+    font-family:"Montserrat";
+    font-size: 1.56rem;
+    font-weight: 700;
+    text-align: center;
+    color: #ccc;
+}
+.content_area .program2 ul li p{
+    font-size: 1.56rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content_area .program3{
+    width: 2000px; height: 180px;
+    background: url(../images/content2/bg.jpg) no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+    padding: 100px 0 100px;
+}
+.content_area .program3 .pro3_content{
+    width: 1200px; margin: 0 auto;
+}
+.content_area .program3 .pro3_content h4{
+    font-size: 2.5rem; 
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.content_area .program3 .pro3_content p{
+    width: 1100px; margin: 0 auto;
+    font-size: 1.38rem;
+    text-align:center;
+    line-height: 2.5rem;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.content_area .pro3_list{width: 900px; margin: 150px auto;}
+.content_area .pro3_list ol{
+}
+.content_area .pro3_list ol li span{
+    font-size: 1.56rem;
+    font-weight: 600;
+    position: relative;
+}
+.content_area .pro3_list ol li span::before{
+    content: ''; display: inline-block;
+    width: 310px; height: 15px;
+    background: #ffe5d3;
+    position: absolute; left: -10px; top: 13px;
+    transform: skewX(-20deg);
+    z-index: -1;
+}
+.content_area .pro3_list ol li:nth-of-type(2) span::before{
+    content: ''; display: inline-block;
+    width: 340px; height: 15px;
+    background: #ffe5d3;
+    position: absolute; left: -10px; top: 13px;
+    transform: skewX(-20deg);
+    z-index: -1;
+    
+}
+.content_area .pro3_list ol li ul{
+    margin: 20px 0 100px;
+}
+.content_area .pro3_list ol li ul li{
+    font-size: 1.38rem;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: #555;
+}
+.content_area .pro3_list ol li ul li:before {
+    content: ''; display: inline-block;
+    width: 7px; height: 7px;
+    background: #777;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative; left: 0; top: -3px;
+}
