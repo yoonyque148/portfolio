@@ -1,0 +1,460 @@
+
+
+/* 와이드 pc  */
+
+#imgBG{display: block;}
+
+a.down{display: block;
+    width: 60px; height: 100px;
+    position: absolute; left:50%; bottom: 10%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    border-radius: 100px;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+a.down .scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    animation: ani 3s infinite;
+
+    & img{width: 60%; margin-top: 30%;}
+    
+    & span.material-symbols-rounded{
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+}
+
+.no-scroll {overflow: hidden;}
+
+
+
+@keyframes ani {
+	0% { transform: translateY(-80%); opacity:0.7; color: var(--text-white);}
+	50% { transform: translateY(0%); opacity:1; }
+	100% { transform: translateY(100%); opacity:1;}
+}		
+
+@keyframes wpbig {
+	0% { transform: translateY(0%);}
+	/* 50% { transform: rotate(0deg);} */
+	100% { transform: translateY(2%);}
+}		
+	
+#content{ width:96%; margin: 0 auto;
+	background: #111;
+	position: relative;
+    padding-top: 10px;
+}
+h2{
+    width: 100%;
+    font-family: var(--stancil-font);
+    font-size: 4rem;
+    color: var(--main-color);
+    position: absolute; top: -55vh;
+    text-align: center; 
+}
+#weapon{
+    padding: 150px 0;
+    & h3{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 3rem;
+        color: var(--text-white);
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        & span.tit_y{
+            font-family: var(--stancil-font);
+            font-size: 3rem;
+            color: var(--main-color);
+            margin-left: 30px;
+        }
+    }
+    
+}
+#weapon:hover{cursor: url(../images/weapon/target.cur) 20 30, auto; }
+
+p.tit{
+    width: 70%;
+    margin: 40px auto 70px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--text-white);
+}
+
+
+/* AR  */
+.wp_ar_box, .wp_dmr_box, .wp_smg_box, .wp_sr_box, .wp_throw_box, .wp_etc_box{
+    display: flex; 
+    justify-content: center;
+    width: 94%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    height: 500px;
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+    border-radius: 30px;
+    box-shadow: 0 0 8px 5px var(--before-tit);
+}
+.wp_etc_box{margin-bottom: 0;}
+
+.ar_big, .dmr_big, .smg_big, .sr_big, .throw_big, .etc_big {
+    width: 30%;
+    position: relative;
+    background: url(../images/weapon/wp_li_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    & img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        animation: wpbig 3s infinite alternate-reverse ;
+    }
+    & dl{
+        width: 90%; margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        position: absolute; bottom: 12%; left: 50%;
+        transform: translateX(-50%);
+        & dt{
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-white);
+        }
+        & dd{
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: var(--text-white);
+        }
+    }
+}
+
+.ar_libox, .dmr_libox, .smg_libox, .sr_libox, .throw_libox, .etc_libox{width: 60%; 
+    margin-left: 10px;
+    overflow: hidden;
+    padding: 8px;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+
+/* 전체 무기 리스트 스타일 */
+.swiper-container{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    & .swiper-wrapper{
+        align-content: flex-start;
+        & li{
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            box-sizing: border-box; 
+            transition: all .2s ease-out;
+            /* cursor: pointer; */
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                filter: grayscale(80%) brightness(70%) blur(1px);
+                transition: all .3s ease-out;
+            }
+            & dl{
+                display: none;
+            }
+        }
+        & li:hover{
+            outline: 1px solid var(--title-span);
+            & img{
+                filter: grayscale(0%) brightness(100%) blur(0);
+                transform: scale(1.05);
+                 
+            }
+        }
+        & li.active {
+            box-shadow: 0 0 5px 1px rgba(255, 196, 0, 0.76);
+            outline: 1px solid rgba(255, 196, 0, 0.76);
+            & img{
+                filter: grayscale(0%) brightness(100%) blur(0);
+                transform: scale(1.05);
+                 
+            /* } */
+        }
+    }
+}
+}
+.swiper1 ul li{ width: calc((100% - 5%) / 4) }
+.swiper2 ul li{ width: calc((100% - 5%) / 3) }
+.swiper3 ul li{ width: calc((100% - 5%) / 3) }
+.swiper4 ul li{ width: calc((100% - 5%) / 2) }
+.swiper5 ul li{ width: calc((100% - 5%) / 3) }
+.swiper6 ul li{ width: calc((100% - 5%) / 3) }
+
+
+.swiper-scrollbar-drag{ background: #777;}
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar{
+    background: var(--before-tit);
+    width: 6px; 
+}
+
+
+
+
+
+
+/* 1600px */
+@media screen and (max-width:1600px) {
+    .swiper1 ul li{ width: calc((100% - 5%) / 4) }
+    .swiper2 ul li{ width: calc((100% - 5%) / 3) }
+    .swiper3 ul li{ width: calc((100% - 5%) / 3) }
+    .swiper4 ul li{ width: calc((100% - 5%) / 2) }
+    .swiper5 ul li{ width: calc((100% - 5%) / 3) }
+    .swiper6 ul li{ width: calc((100% - 5%) / 3) }
+
+}
+
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+.wp_ar_box, .wp_dmr_box, .wp_smg_box, .wp_sr_box, .wp_throw_box, .wp_etc_box{
+    height: 400px;
+}
+.wp_etc_box{margin-bottom: 0;}
+
+.ar_big, .dmr_big, .smg_big, .sr_big, .throw_big, .etc_big {
+    width: 35%;
+    & dl{
+        & dt{
+            font-size: 1.7rem;
+        }
+        & dd{
+            font-size: 1.3rem;
+        }
+    }
+}
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar {
+    right: -2px; 
+}
+    .swiper1 ul li{ width: calc((100% - 5%) / 3) }
+
+    br{display: none;}
+}
+
+
+
+
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+
+#content{width: 100%;
+    background: rgba(0, 0, 0, .9);
+}
+  
+#weapon{
+    padding: 100px 0;
+    & h3{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 2.5rem;
+        color: var(--text-white);
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        & span.tit_y{
+            font-family: var(--stancil-font);
+            font-size: 2.5rem;
+            color: var(--main-color);
+            margin-left: 30px;
+        }
+    }
+}
+p.tit{
+    margin: 30px auto 60px;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+    .wp_ar_box, .wp_dmr_box, .wp_smg_box, .wp_sr_box, .wp_throw_box, .wp_etc_box{
+        width: 100%;
+        border-radius: 0;
+        padding: 50px 0;
+        box-shadow: none;
+    }
+    .wp_etc_box{margin-bottom: 0;}
+    
+    .ar_big, .dmr_big, .smg_big, .sr_big, .throw_big, .etc_big {
+        width: 40%;
+        & dl{
+            & dt{
+                font-size: 1.7rem;
+            }
+            & dd{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .ar_libox, .dmr_libox, .smg_libox, .sr_libox, .throw_libox, .etc_libox{
+        width: 55%; 
+        margin-left: 0;
+    }
+    
+    .swiper1 ul li{ width: calc((100% - 5%) / 2) }
+    .swiper2 ul li{ width: calc((100% - 5%) / 2) }
+    .swiper3 ul li{ width: calc((100% - 5%) / 2) }
+    .swiper5 ul li{ width: calc((100% - 5%) / 2) }
+    .swiper6 ul li{ width: calc((100% - 5%) / 2) }
+
+}
+
+
+
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+
+    p.tit{
+        margin: 20px auto 40px;
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+    .wp_ar_box, .wp_dmr_box, .wp_smg_box, .wp_sr_box, .wp_throw_box, .wp_etc_box{
+        height: 300px;
+        margin-bottom: 100px;
+        padding: 40px 0;
+    }
+    .wp_etc_box{margin-bottom: 0;}
+
+    .ar_libox, .dmr_libox, .smg_libox, .sr_libox, .throw_libox, .etc_libox{
+        width: 53%; 
+        margin-left: 5px;
+    }
+
+    .swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar {
+        right: -5px; 
+    }
+
+
+
+}
+
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    /* br {display: none;} */
+    .wp_ar_box, .wp_dmr_box, .wp_smg_box, .wp_sr_box, .wp_throw_box, .wp_etc_box{
+        flex-direction: column;
+        align-items: center;
+        height: 880px;
+        margin-bottom: 100px;
+        padding: 40px 0;
+    }
+    .wp_etc_box{margin-bottom: 0;}
+    
+    .ar_big, .dmr_big, .smg_big, .sr_big, .throw_big, .etc_big {
+        width: 90%;
+        & dl{
+            width: 94%;
+            bottom: 13%;
+            & dt{
+                font-size: 1.8rem;
+            }
+            & dd{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .ar_libox, .dmr_libox, .smg_libox, .sr_libox, .throw_libox, .etc_libox{
+        width: 86%; 
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 5px 15px 5px 5px;
+    }
+
+    .swiper1 ul li{ width: calc((100% - 5%) / 3) }
+    .swiper2 ul li{ width: calc((100% - 5%) / 3) }
+    .swiper3 ul li{ width: calc((100% - 5%) / 3) }
+    .swiper4 ul li{ width: calc((100% - 5%) / 2) }
+    .swiper5 ul li{ width: calc((100% - 5%) / 3) }
+    .swiper6 ul li{ width: calc((100% - 5%) / 3) }
+
+
+    .swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar {
+        right: -15px;
+    }
+}
+
+
+/* 최소  */
+@media screen and (max-width:460px) {
+      
+    #weapon{
+        padding: 60px 0;
+        & h3{
+            width: 100%;
+            margin: 0 auto;
+            font-size: 2rem;
+            color: var(--text-white);
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            & span.tit_y{
+                font-family: var(--stancil-font);
+                font-size: 2rem;
+                color: var(--main-color);
+                margin-left: 20px;
+            }
+        }
+    }
+    p.tit{
+        width: 90%;
+        margin: 10px auto 20px;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .wp_ar_box, .wp_dmr_box, .wp_smg_box, .wp_sr_box, .wp_throw_box, .wp_etc_box{
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+        margin-bottom: 80px;
+        padding: 20px 0;
+    }
+    .wp_etc_box{margin-bottom: 0;}
+
+    .ar_big, .dmr_big, .smg_big, .sr_big, .throw_big, .etc_big {
+        width: 90%;
+        & dl{
+            width: 94%;
+            bottom: 13%;
+            & dt{
+                font-size: 1.6rem;
+            }
+            & dd{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,1058 @@
+:root {
+    --main-color: #F2AA00;
+    --secondary-color: #111;
+}
+
+
+/* 와이드 pc  */
+
+	
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+#videoBG {
+   position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+  
+}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none
+}
+
+
+/* 본문 콘텐츠 영역 */
+
+#content{ width:100%; margin: 0;
+    background: rgba(0, 0, 0, .8);
+}
+
+
+
+
+
+/* PUBG overview 섹션 1 */
+#overview{width: 90%; margin: 0 auto;
+    padding: 150px 0 100px;
+
+    & div{
+        margin-bottom: 80px;
+        position: relative;
+
+        & div.text_box{
+            float: left;
+            width: 40%;
+            color: #fff;
+            & h3{
+                font-family: 'Big Shoulders Stencil Text';
+                font-size: 3rem;
+                font-weight: 800;
+                color: #F2AA00;                
+            }
+            & p.tit{
+                width: 100%;
+                font-size: 3.5rem;
+                font-weight: 600;
+                position: relative; left: 0; top: 0;
+                z-index: 10;
+                margin-top: 80px;
+            }
+            & p:nth-of-type(2){
+                width: 65%; 
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 2rem;
+                text-align: justify;
+                margin-top: 30px;
+            }
+            & p:nth-of-type(3){
+                width: 65%; 
+                font-weight: 300;
+                line-height: 1.5rem;
+                text-align: justify;
+                word-break: break-all;
+                margin-top: 30px;
+            }
+        }
+        & img{float: right;
+            width: 70%; height: 600px;
+            position: absolute; right: 0; top: 0;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+    & ul.container{
+        margin-top: 100px;
+        clear: both;
+        display: grid;
+        grid-template-columns: 1fr 1fr .8fr .8fr;
+        grid-auto-rows: 300px;  /* auto 기본값 */
+        grid-gap: 10px;
+        
+        grid-template-areas: 
+        'b c a a'
+        'd e e f';
+
+        & li.txt{ grid-area: a;
+            color: #fff;
+            width: 84%; margin: 3% auto;
+            & span{
+                font-size: 2.2rem;
+                font-weight: 500;
+                text-align: justify;
+            }
+            & p{
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 2rem;
+                text-align: justify;
+                margin-top: 20px;
+            }
+        }
+        & li.img1{grid-area: b;}
+        & li.img2{grid-area: c;}
+        & li.img3{grid-area: d;}
+        & li.img4{grid-area: e;}
+        & li.img5{grid-area: f;}
+
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+   
+}
+
+
+
+
+
+
+
+/* Map 섹션 2 */
+
+#map{width: 100%;
+    
+    & .map_wrap{width: 100%; padding: 150px 0;
+        background-image: url(../images/map_bg.jpg);
+     
+        & div.txt_box{width: 90%; margin: 0 auto;
+            & h3{
+                font-family: 'Big Shoulders Stencil Text';
+                font-size: 3rem;
+                font-weight: 800;
+                color: #F2AA00;
+            }
+            & p{
+                width: 69%;
+                float: left;
+                font-size: 1.35rem;
+                line-height: 2.2rem;
+                color: #fff;
+                margin: 20px 0 50px;
+            }
+            & a.more{
+                float: right; margin: 0 auto;
+                width: 180px; height: 55px;
+                font-family: 'Big Shoulders Stencil Text';
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+                color: #D9D9D9;
+                position: relative;
+                transition: all .3s ease-out;
+            }
+            & a::before{
+                content: ''; display: block;
+                width: 90%; height: 3px;
+                background-color: #D9D9D9;
+                position: absolute; left: 0; bottom: 6px;
+                transition: all .3s ease-out;
+            }
+            & a::after{
+                content: ''; display: block;
+                width: 24px; height: 9px;
+                background:url(../images/bullet.svg);
+                position: absolute; right: 0; bottom: 5px;
+                transition: all .3s ease-out;
+            }
+            & a.more:hover{
+                color: #F2AA00;
+                text-shadow: 
+                0 0 5px #111, 
+                0 0 10px #F2AA00,
+                0 0 20px #F2AA00;
+            }
+            a.more:hover::before{
+                background: #F2AA00;
+                box-shadow: 
+                0 0 3px #111, 
+                0 0 8px #F2AA00,
+                0 0 10px #F2AA00;
+            }
+            a.more:hover::after{
+                background: url(../images/bullet_on.svg);
+            }
+        }
+        & ul{
+            width: 100%; height: 700px;
+            display: flex;
+
+            & li:nth-of-type(1){background-image: url(../images/map1.jpg);}
+            & li:nth-of-type(2){background-image: url(../images/map2.jpg);}
+            & li:nth-of-type(3){background-image: url(../images/map3.jpg);}
+            & li:nth-of-type(4){background-image: url(../images/map4.jpg);}
+
+            & li{width: 25%;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                filter: grayscale(100%) brightness(80%);
+                transition: all .2s ease-out;
+                overflow: hidden;
+                
+                & dl {
+                    color: #fff;
+                    text-align: center;
+                    text-shadow: 0 0 5px rgba(0, 0, 0, .9), 0 0 10px rgba(0, 0, 0, .5);
+                    position: absolute; left: 0; bottom: -15%;
+                    transition: all .2s ease-in;
+
+                    & dt:first-of-type{
+                        font-size: 2.2rem;
+                        font-weight: 600;
+                    }
+                    & dt:last-of-type{
+                        font-size: 1.5rem;
+                        margin-top: 5px;
+                    }
+                    & dd{
+                        width: 76%; margin: 0 auto;
+                        font-size: 1.13rem;
+                        margin-top: 50px;
+                        margin-bottom: 100px;
+                        opacity: 0;
+                        transition: all .2s ease-in;
+                    }
+                }
+                
+            }
+            & li:hover{
+                filter: grayscale(0) brightness(100%);
+            }
+            & li:hover dl{
+                position: absolute; left: 0; bottom: 0;
+                background: linear-gradient(to bottom, transparent, #00000083);
+            }
+            & li:hover dd{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/* Weapon 섹션 3 */
+
+#weapon{
+
+    & .wp_wrap{ 
+        width: 100%; padding: 150px 0;
+        background: url(../images/wp_bg.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }
+    & h3{
+        font-family: 'Big Shoulders Stencil Text';
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: center;
+        color: #F2AA00;
+    }
+    & p{
+        width: 46%; margin: 40px auto 80px;
+        text-align: center;
+        font-size: 1.35rem;
+        line-height: 2.2rem;
+        color: #fff;
+        z-index: 10;
+        position: relative;
+    }
+    & ul.shoot{
+        & li{position: relative; opacity: 0;}
+        & li:nth-of-type(1){
+            & img{
+                position: absolute; left: 0; bottom: 0;
+            }
+        }
+        & li:nth-of-type(2){
+            & img{ width: 260px;
+                position: absolute; right: 280px; bottom: 160px;
+            }
+        }
+        & li:nth-of-type(3){
+            & img{ width: 330px;
+                position: absolute; right: 90px; bottom: -10px;
+                opacity: .9;
+            }
+        }
+        & li:nth-of-type(4){
+            & img{ width: 420px;
+                position: absolute; right: 210px; bottom: -280px;
+                transform: rotate(-75deg);
+            }
+        }
+        & li:nth-of-type(5){
+            & img{ width: 330px;
+                position: absolute; left: 14vw; top: 110vh;
+                transform: rotate(-90deg);
+            }
+        }
+        & li:nth-of-type(6){
+            & img{ width: 300px;
+                position: absolute; left: 5vw; top: 140vh;
+                transform: rotate(-75deg);
+            }
+        }
+
+    }
+    /* 스크롤 이벤트 */
+    .shoot .gun{left: 0;}
+    .shoot.scroll .gun{transition: all .4s ease; left: 5.5vw;; opacity: 1;}
+    .shoot.scroll .hole1{transition: all .3s ease; transition-delay: .2s; opacity: 1; }
+    .shoot.scroll .hole2{transition: all .3s ease; transition-delay: .5s; opacity: 1; }
+    .shoot.scroll .hole3{transition: all .3s ease; transition-delay: .65s; opacity: 1; }
+    .shoot.scroll .hole4{opacity: 1;}
+    .shoot.scroll .hole5{opacity: 1;}
+
+    & ul.container{
+        width: 86%; margin: 0 auto 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 394px;  /* auto 기본값 */
+        grid-gap: 20px;
+        
+        grid-template-areas:
+        'a a aa g'
+        'a a b bb'
+        'cc c d d'
+        'cc dd d d'
+        'ee e ff f';
+
+        & li{color: #fff;
+            background-size: cover;
+            background-position: center; 
+
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                outline: 1px solid #d9d9d9;
+                filter: invert(90%) brightness(70%);
+                transition: all .3s ease;
+            }
+            & dl{
+                border-top: 1px solid #d9d9d9;
+                padding: 30px 20px;
+
+                & dt:first-of-type{
+                    font-size: 1.5rem;
+                }
+                & dt:last-of-type{
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    margin-top: 10px;
+                }
+                & dd{
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    margin-top: 10px;
+                }
+            }
+        }
+        & li:hover{
+            & img{
+                display: block;
+                filter: invert(0%) brightness(100%);
+                backdrop-filter: blur(3px);
+                box-shadow: 0 0 8px 5px #ffffff85;
+            }
+        }
+
+        & li.img1{
+            grid-area: a;
+            background: url(../images/wp_bg_big.jpg) no-repeat;
+            background-size: cover;
+            background-position: center; 
+        }
+        & li.img1_txt{grid-area: aa;}
+        & li.img2{grid-area: b;
+            background: url(../images/wp_bg_small.jpg) no-repeat;
+            background-size: cover;
+            background-position: center; 
+        }
+        & li.img2_txt{grid-area: bb;}
+        & li.img3{grid-area: c;
+            background: url(../images/wp_bg_small.jpg) no-repeat;
+            background-size: cover;
+            background-position: center; 
+        }
+        & li.img3_txt{grid-area: cc;}
+        & li.img4{grid-area: d;
+            background: url(../images/wp_bg_big.jpg) no-repeat;
+            background-size: cover;
+            background-position: center; 
+        }
+        & li.img4_txt{grid-area: dd;}
+        & li.img5{grid-area: e;
+            background: url(../images/wp_bg_small.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        & li.img5_txt{grid-area: ee;}
+        & li.img6{grid-area: f;
+            background: url(../images/wp_bg_small.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        & li.img6_txt{grid-area: ff;}
+        & li.empty{grid-area: g;
+            border: none;
+        }
+        
+          
+    }
+}
+
+
+
+
+
+
+/* Trailer 섹션 4 */
+
+#trailer{
+    & .tr_wrap{
+        width: 100%; padding: 150px 0 100px;
+        background: url(../images/tr_bg.jpg);
+        overflow: hidden;
+
+        & h3{
+            font-family: 'Big Shoulders Stencil Text';
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            color: #F2AA00;
+            position: relative;
+        }
+        & h3::before{
+            content: ''; display: block;
+            width: 680px; height: 860px;
+            position: absolute; left: calc(15% - 350px); top: 10vh;
+            background: url(../images/tr_bg1.png) no-repeat;
+        }
+        & p{
+            width: 50%; margin: 40px auto 50px;
+            text-align: center;
+            font-size: 1.35rem;
+            line-height: 2.2rem;
+            color: #fff;
+        }
+        & div.swiper-container{
+            padding: 50px 0;
+            position: relative;
+            & ul.swiper-wrapper{
+                & li.swiper-slide{
+                    width: auto; margin: 0 30px;
+                    & div.videoContent{
+                        height: auto;
+                        & div.videoArea{
+                            & a.popup_youtube{
+                                width: 100%;
+                                position: relative;
+                                & img{ width: 600px;}
+                                & div.playBnt{
+                                    position: absolute; left: 45%; top: 45%;
+                                    & img{ width: 60px;}
+                                }
+                            }
+                        }
+                        & span.videoTitle{
+                            display: block;
+                            font-size: 1.25rem;
+                            font-weight: 500;
+                            color: #fff;
+                            margin-top: 20px;
+                            text-shadow: 0 0 2px rgba(0, 0, 0, .9), 0 0 5px rgba(0, 0, 0, .9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#trailer .tr_wrap .swiper-container-horizontal>.swiper-pagination-bullets{
+    position: absolute; 
+    bottom: 0; left: 0; top: 0; right: 0;
+    height: 20px;
+}
+#trailer .tr_wrap .swiper-pagination-bullet,
+#trailer .tr_wrap .swiper-pagination-bullet-active{
+    width: 40px; height: 6px;
+    border-radius: 10px;
+    background: var(--main-color);
+}
+
+
+
+/* GALLERY 섹션 5 */
+
+#gallery{
+    padding: 150px 0 100px;
+    background: #111;
+    & h3{
+        font-family: 'Big Shoulders Stencil Text';
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: center;
+        color: #F2AA00;
+        position: relative;
+    }
+      & p{
+        width: 55%; margin: 40px auto 50px;
+        text-align: center;
+        font-size: 1.35rem;
+        line-height: 2.2rem;
+        color: #fff;
+    }
+    & ul.container{
+        width: 86%; margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 300px;  /* auto 기본값 */
+        grid-gap: 10px;
+        
+        grid-template-areas:
+        'a b c d'
+        'a e e f'
+        'g h i f';
+
+        & li{
+            overflow: hidden;
+            & img{
+                width: 100%; height: 100%;
+                object-fit: cover;
+                object-position: center;
+                filter: brightness(70%) ;
+                transition: all .3s ease-out;
+            }
+        }
+        & li:hover{
+            & img{
+                filter: brightness(100%);
+                transform: scale(1.2) rotate(3deg);
+            }
+        }
+        & li.img1{grid-area: a;}
+        & li.img2{grid-area: b;}
+        & li.img3{grid-area: c;}
+        & li.img4{grid-area: d;}
+        & li.img5{grid-area: e;}
+        & li.img6{grid-area: f;}
+        & li.img7{grid-area: g;}
+        & li.img8{grid-area: h;}
+        & li.img9{grid-area: i;}
+      
+       
+    }
+}
+
+
+
+
+
+
+
+
+/* 더보기 버튼 공통 CSS */
+
+a.more{
+    width: 180px; height: 55px;
+    font-family: 'Big Shoulders Stencil Text';
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px auto 0;
+    color: #D9D9D9;
+    position: relative;
+    transition: all .3s ease-out;
+}
+a.more::before{
+    content: ''; display: block;
+    width: 90%; height: 3px;
+    background-color: #D9D9D9;
+    position: absolute; left: 0; bottom: 6px;
+    transition: all .3s ease-out;
+}
+a.more::after{
+    content: ''; display: block;
+    width: 24px; height: 9px;
+    background:url(../images/bullet.svg);
+    position: absolute; right: 0; bottom: 5px;
+    transition: all .3s ease-out;
+}
+a.more:hover{
+    color: #F2AA00;
+    text-shadow: 
+    0 0 5px #111, 
+    0 0 10px #F2AA00,
+    0 0 20px #F2AA00;
+}
+a.more:hover::before{
+    background: #F2AA00;
+    box-shadow: 
+    0 0 3px #111, 
+    0 0 8px #F2AA00,
+    0 0 10px #F2AA00;
+}
+a.more:hover::after{
+    background: url(../images/bullet_on.svg);
+}
+
+
+
+
+/* 1600px pc */
+@media screen and (max-width:1600px) {
+	
+    #overview div div.text_box{ width: 50%;}
+    #overview div div.text_box p:nth-of-type(2){ width: 55%;}
+    #overview div div.text_box p:nth-of-type(3){ width: 55%;}
+    #overview div img{ height: 650px;}
+    #overview ul.container li.txt{width:90%; margin: auto auto;}
+
+    #map .map_wrap ul li dl dd {width: 70%;}
+    
+    #weapon ul.container { width: 90%; grid-auto-rows: 325px;}
+    #weapon ul.shoot li:nth-of-type(5) img{display: none;}    
+    #weapon ul.shoot li:nth-of-type(6) img{display: none;}
+}
+
+
+
+/* 일반 pc 1280px */
+@media screen and (max-width:1280px) {
+    #overview div div.text_box{ width: 52%;}
+    #overview div div.text_box p.tit{ font-size: 3.2rem; text-shadow: 0 0 15px rgba(0, 0, 0, .5);}
+    #overview div div.text_box p:nth-of-type(2) {
+        width: 52%;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+    #overview div div.text_box p:nth-of-type(3){ width: 52%;}
+    #overview ul.container li.txt p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    #map .map_wrap {padding: 100px 0;}
+    #map .map_wrap div.txt_box a.more { margin-top: 40px;}
+    #map .map_wrap ul {height: 550px;}
+    #map .map_wrap ul li dl dd {width: 65%; margin-top: 20px; margin-bottom: 60px;}
+
+    #weapon p {width: 50%; text-shadow: 0 0 8px rgba(0, 0, 0, .7);}
+    #weapon ul.shoot li:nth-of-type(1) img {width: 350px;}
+    #weapon ul.shoot li:nth-of-type(2) img {width: 220px; right: 200px;}    
+    #weapon ul.shoot li:nth-of-type(3) img {width: 300px; right: 0;  bottom: 20px;}
+    #weapon ul.shoot li:nth-of-type(4) img {width: 400px; right: 70px;}
+    
+    #weapon ul.container {width: 90%; grid-auto-rows: 255px;}
+
+    #trailer .tr_wrap {padding: 100px 0;}
+    #gallery{padding: 100px 0;}
+    #gallery ul.container {width: 95%;}
+    
+}
+
+
+/* 태블릿 1024px */
+@media screen and (max-width:1024px) {
+    #overview {padding: 100px 0;}
+    #overview div div.text_box {
+        width: 100%;
+        float: none; clear: both;
+    }
+    #overview div { margin-bottom: 50px;}
+    #overview div div.text_box p.tit{ 
+        font-size: 3rem;
+        font-weight: 500;
+        margin-top: 50px; 
+        text-shadow: none;
+    }
+    #overview div img {
+        width: 100%; height: 500px;
+        position: inherit;
+        float: none; clear: both; 
+    }
+    #overview div div.text_box p:nth-of-type(2) {
+        width: 90%;
+        line-height: 1.7rem;
+    }
+    #overview div div.text_box p:nth-of-type(3){display: none;}
+    #overview ul.container {
+        margin-top: 60px;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas:
+        'a a'
+        'b c'
+        'e e'
+        'd f';
+    }
+    #overview ul.container li.txt {width: 100%; margin-bottom: 20px;}
+    
+    #map .map_wrap ul { flex-wrap: wrap;  height: 1500px;}
+    #map .map_wrap ul li{ width: 50%; filter: none;}
+    #map .map_wrap ul li dl{bottom: 0; background: linear-gradient(to bottom, transparent, #00000083);}
+    #map .map_wrap ul li dl dd{ margin-top: 40px; opacity: 1; margin-bottom: 80px;}
+    
+    #weapon .wp_wrap {padding: 100px 0;}
+    #weapon ul.shoot li:nth-of-type(1){display: none;}
+    #weapon ul.shoot li:nth-of-type(2) img {right: 50px;}    
+    #weapon ul.shoot li:nth-of-type(3) img {width: 200px; right: 0;  bottom: 20px;}
+    #weapon ul.shoot li:nth-of-type(4) img {width: 400px; left: -20px; bottom: -150px; transform: rotate(25deg);}
+    #weapon ul.shoot li:nth-of-type(5) img{display: block; width: 250px ; left: 12vw; top: 100vh;}    
+    #weapon ul.shoot li:nth-of-type(6) img{display: block; left: 2vw; top: 150vh;
+        transform: rotate(270deg); opacity: 0.5;}   
+
+    #weapon p {width: 60%;}
+    #weapon ul.container {
+        grid-auto-rows: 290px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        'a a aa'
+        'a a b'
+        'cc c bb'
+        'cc d d'
+        'dd d d';
+
+        & .img5, .img5_txt, .img6, .img6_txt, .empty{display: none;}
+    }
+    #weapon ul.container li img {
+        outline: 1px solid #d9d9d9;
+        filter: none;
+        backdrop-filter: blur(3px);
+        transition: all .3s ease;
+    }
+    
+    #trailer .tr_wrap p {
+        position: relative; z-index: 1; 
+        width: 65%; text-shadow: 0 0 5px rgba(0, 0, 0, .9);
+    }
+    #trailer .tr_wrap .videoTitle {
+        text-shadow: 0 0 2px rgba(0, 0, 0, .9), 0 0 5px rgba(0, 0, 0, .9);
+    }
+
+    #gallery p {width: 66%;}
+    #gallery ul.container{
+        width: 96%; 
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250px;  /* auto 기본값 */
+        grid-template-areas:
+        'a b c'
+        'a i i'
+        'f i i'
+        'e e h';
+    }
+    #gallery ul.container li img{
+        filter: none;
+        transition: all .3s ease-out;
+    }
+    #gallery ul.container li.img4, #gallery ul.container li.img7{display: none;}
+    
+}
+   
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+    #overview div div.text_box p:nth-of-type(2) {width: 90%;}
+    #map .map_wrap div.txt_box {position: relative;}
+    #map .map_wrap div.txt_box p {
+        width: 100%; 
+        float: none; clear: both; margin: 50px 0;
+        text-align: justify;
+    }
+	#map .map_wrap div.txt_box a.more {
+        float: none; clear: both; margin: 0;
+        position: absolute; top: 0; right: 0;
+    }
+    #map .map_wrap ul {height: 1200px;}
+
+    #weapon ul.shoot li:nth-of-type(5) img {
+        width: 250px;
+        left: 8vw; top: 73vh;
+        opacity: .8;
+    }
+    #weapon ul.shoot li:nth-of-type(6) img {
+        width: 250px;
+        left: -2vw; top: 115vh; 
+        opacity: .5;
+    }
+    #weapon ul.container {grid-auto-rows: 210px;}
+    #weapon ul.container li dl {padding: 20px 10px;}
+
+    #trailer .tr_wrap div.swiper-container ul.swiper-wrapper li.swiper-slide div.videoContent div.videoArea a.popup_youtube img {width: 500px;}
+
+    #gallery ul.container{grid-auto-rows: 200px;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #overview{width: 100%; padding: 80px 0; }
+    #overview div div.text_box {text-align: center;}
+    #overview div div.text_box h3 {font-size: 2.5rem;}
+    #overview div div.text_box p.tit {font-size: 2.2rem; margin-top: 30px;}
+    #overview div div.text_box p:nth-of-type(2){width: 85%; text-align: center; margin: 30px auto;}
+    #overview div img {height: 300px;}
+
+    #overview ul.container{    
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+        grid-template-areas:
+        'a'
+        'e'
+        'd';
+    }
+    #overview ul.container li.txt {width: 90%; text-align: center; margin-bottom: 20px;}
+    #overview ul.container li.txt span {font-size: 1.8rem;}
+                    
+    #overview ul.container li.txt p {
+        text-align: center; 
+        font-size: 1rem; 
+        line-height: 1.5rem; 
+        margin-top: 10px;
+    }
+    #overview ul.container li.img1, #overview ul.container li.img2, #overview ul.container li.img5{display: none;}
+
+    #map .map_wrap div.txt_box {
+        & a.more{
+            width: 120px; height: 45px;
+            font-family: 'Big Shoulders Stencil Text';
+            font-size: 1.7rem;
+            font-weight: 700;
+            text-align: center;
+            color: #D9D9D9;
+            transition: all .3s ease-out;
+        }
+        a.more::before{
+            content: ''; display: block;
+            width: 90%; height: 3px;
+            background-color: #D9D9D9;
+            position: absolute; left: 0; bottom: 6px;
+            transition: all .3s ease-out;
+        }
+        a.more::after{
+            content: ''; display: block;
+            width: 24px; height: 9px;
+            background:url(../images/bullet.svg);
+            background-size: 100% auto;
+            position: absolute; right: 0; bottom: 5px;
+            transition: all .3s ease-out;
+        }
+        a.more:hover{
+            color: #F2AA00;
+            text-shadow: 
+            0 0 5px #111, 
+            0 0 10px #F2AA00,
+            0 0 20px #F2AA00;
+        }
+        a.more:hover::before{
+            background: #F2AA00;
+            box-shadow: 
+            0 0 3px #111, 
+            0 0 8px #F2AA00,
+            0 0 10px #F2AA00;
+        }
+        a.more:hover::after{
+            background: url(../images/bullet_on.svg);
+        }
+    }
+
+        
+    #map .map_wrap div.txt_box p {font-size: 1.1rem; line-height: 2rem;}
+    #map .map_wrap div.txt_box h3{font-size: 2.5rem;}
+    
+    #map .map_wrap ul {height: 1000px;}
+    #map .map_wrap ul li {width: 100%;}
+    
+    #map .map_wrap ul li dl dt:first-of-type{font-size: 1.8rem;}
+    #map .map_wrap ul li dl dt:last-of-type{font-size: 1.3rem;}
+    #map .map_wrap ul li dl dd{font-size: 1rem; width: 65%; margin: 20px auto 50px;}
+
+    #weapon .wp_wrap h3{font-size: 2.5rem;}
+    #weapon ul.shoot li:nth-of-type(2) img {width: 130px; right: 80px; bottom: 170px;}
+    #weapon ul.shoot li:nth-of-type(3) img {width: 150px; right: -20px;  bottom: 100px; opacity: .8;}
+    #weapon ul.shoot li:nth-of-type(4) img {width: 200px; left: -30px; bottom: -40px;  transform: rotate(292deg);}
+    #weapon ul.shoot li:nth-of-type(5) img{display: block; width: 150px ; left: 70vw;
+        top: 65vh;}    
+    #weapon ul.shoot li:nth-of-type(6) img{display: block; left: -8vw; top: 100vh;
+        transform: rotate(270deg); opacity: 0.5;}   
+    #weapon p {
+        width: 80%; 
+        font-size: 1.1rem; line-height: 2rem;
+        margin: 20px auto 40px;
+    }
+    #weapon ul.container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: 30px;
+        grid-template-areas:
+        'a a'
+        'a a'
+        'aa aa'
+        'd dd'
+        'ee e';
+
+        & .img5, .img5_txt {display: block;}
+        & .img2, .img2_txt, .img3, .img3_txt, .img6, .img6_txt {display: none;}
+        
+    }
+    #weapon ul.container li.img1_txt dl {
+        display: flex; 
+        justify-content: space-evenly; 
+        align-items: center;
+        border: 0; border-bottom: 1px solid #d9d9d9;
+        padding: 10px 0 40px;
+    }
+    #weapon ul.container li dl dt:first-of-type {
+        font-size: 1.3rem;
+    }
+    #weapon ul.container li.img1_txt dl dt:last-of-type {
+        margin: 0; font-size: 1.7rem;
+    }
+    #weapon ul.container li dl dt:last-of-type {
+        font-size: 1.7rem;
+    }
+    #weapon ul.container li.img1_txt dl dd {margin: 0;}
+    #weapon ul.container li dl dd {font-size: 1.2rem;}
+
+    #trailer .tr_wrap {
+        background: url(../images/tr_bg_m.jpg);
+        background-size: cover;
+        background-position: center; 
+    }
+    #trailer .tr_wrap h3{font-size: 2.5rem;}
+    #trailer .tr_wrap h3::before{display: none;}
+    #trailer .tr_wrap p{font-size: 1.1rem; line-height: 2rem;
+        margin: 20px auto 40px; width: 75%  ;
+    }
+    #trailer .tr_wrap div.swiper-container ul.swiper-wrapper li.swiper-slide div.videoContent div.videoArea a.popup_youtube img {width: 350px;}
+
+    #trailer .tr_wrap div.swiper-container ul.swiper-wrapper li.swiper-slide div.videoContent span.videoTitle {text-align: center;}
+
+    #trailer .tr_wrap div.swiper-container {padding: 0; padding-bottom: 40px;}
+    #trailer .tr_wrap div.swiper-container ul.swiper-wrapper li.swiper-slide {
+        margin: 0 10px;}
+
+    #trailer .tr_wrap .swiper-container-horizontal>.swiper-pagination-bullets {
+        position: relative;
+        top: 40px;
+    }
+    #trailer .tr_wrap .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 15px;
+        height: 10px;
+        background: var(--secondary-color);
+    }
+
+    #gallery p{
+        width: 85%;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    #gallery ul.container {
+        grid-auto-rows: 220px;
+        grid-template-areas:
+        'a b b'
+        'i i i'
+        'i i i'
+        'h h f';
+        
+        & .img3, .img4, .img5, .img7 {display: none;}
+    }
+
+
+
+
+    /* 더보기 버튼 공통 CSS */
+
+    a.more{
+        width: 120px; height: 45px;
+        font-family: 'Big Shoulders Stencil Text';
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 50px auto 0;
+        color: #D9D9D9;
+        position: relative;
+        transition: all .3s ease-out;
+    }
+    a.more::before{
+        content: ''; display: block;
+        width: 90%; height: 3px;
+        background-color: #D9D9D9;
+        position: absolute; left: 0; bottom: 6px;
+        transition: all .3s ease-out;
+    }
+    a.more::after{
+        content: ''; display: block;
+        width: 24px; height: 9px;
+        background:url(../images/bullet.svg) no-repeat;
+        background-size: 100% auto;
+        position: absolute; right: 0; bottom: 5px;
+        transition: all .3s ease-out;
+    }
+    a.more:hover{
+        color: #F2AA00;
+        text-shadow: 
+        0 0 5px #111, 
+        0 0 10px #F2AA00,
+        0 0 20px #F2AA00;
+    }
+    a.more:hover::before{
+        background: #F2AA00;
+        box-shadow: 
+        0 0 3px #111, 
+        0 0 8px #F2AA00,
+        0 0 10px #F2AA00;
+    }
+    a.more:hover::after{
+        background: url(../images/bullet_on.svg)no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+}
