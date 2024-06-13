@@ -1,0 +1,79 @@
+
+#content .title_area h2::before{content: 'Location'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* 오시는길의 실제 본문 내용 */ 
+
+/* content_area 영역 */
+
+.content_area{width: 1200px; margin: 0 auto 200px; overflow: hidden;}
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2.5rem; color:#8E684C; text-align:center; font-weight: 600; }
+.content_area .map_api #map{width: 1200px; height: 600px; box-shadow: 0 3px 8px rgba(0, 0, 0, .3); margin-top: 50px ;}
+
+
+/* map-left 영역 */
+
+.content_area .map_left{width: 600px; float: left; margin-top: 100px;}
+.content_area .map_left .p1{
+    font-family: "Noto Serif KR";
+    font-size: 2.5rem;
+    color: #8E684C;
+}
+.content_area .map_left p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.content_area .map_left p span{
+    font-family: "Noto sans KR";
+    font-size: 1.25rem;
+    color: #8E684C;    
+}
+
+
+/* map-right 영역 */
+
+.content_area .map_right{width: 600px; float: right; margin-top: 100px;}
+.content_area .map_right div{margin: 70px 0 40px; position: relative;}
+
+.content_area .map_right span{position: absolute; left: 0; top: 6px;
+    color: #8E684C;
+}
+.content_area .map_right p{font-size: 1.38rem; font-weight: 600;
+    color: #8E684C; margin-left: 30px;
+}
+.content_area .map_right div:first-child::after{content: ''; display: block;
+    background: #ccc; width: 600px; height: 1px;
+    position: absolute; left: 0; bottom: -40px;
+}
+.content_area .map_right div:nth-child(2)::after{content: ''; display: block;
+    background: #ccc; width: 600px; height: 1px;
+    position: absolute; left: 0; bottom: -40px;
+}
+
+.content_area .map_right .car{margin: 0 0;}
+
+.content_area .map_right dl dt{font-size: 1.13rem; font-weight: 500; margin-top: 20px;}
+.content_area .map_right dl dd{font-size: 1.13rem;}
+
+.content_area .map_right .bus dl dt:nth-of-type(2){color: #8E684C; }
+
+.content_area .map_right em{display: block;
+    font-style: normal; margin-top: 20px; color: #888;}
+
+.content_area .map_right .subway dl{position: relative;}
+.content_area .map_right .subway dt{margin-left: 30px;}
+.content_area .map_right .subway dd{margin-top: 3px;}
+.content_area .map_right .subway dt::before{
+    content: '3'; display: block;
+    background:#DD742C;
+    color: #fff;
+    font-size: 0.9rem;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; left: 0; top: 3px;
+    padding: 0 0 2px 1px;
+}

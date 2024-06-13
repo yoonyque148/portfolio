@@ -1,0 +1,155 @@
+#content .title_area h2::before{content: 'History'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* 연혁의 실제 본문 내용 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;}
+
+
+/* 연대별 리스트 버튼 */
+.content_area .historyNav{
+    width: 100%; margin: 0 auto;
+    border: 1px solid #d9d9d9;
+}
+    /* js 가상 클래스 */
+    .content_area .navOn{
+        position: fixed; width: 100%;
+        z-index:60; left:0; top: 0;
+        background: #fff;
+        border-bottom: 1px solid #d9d9d9;
+        border-top: 0px
+    }
+    .content_area .historyNav ul li a.spy{
+        background: #8E684C;
+        color: #fff;
+    }
+
+.content_area .historyNav ul{
+    width: 1200px; margin: 0 auto;
+    overflow: hidden;
+}
+.content_area .historyNav ul li{
+    width: 16.66%; margin: 0 auto;
+    float: left;
+    text-align: center;
+    font-size: 1.56rem;
+    font-family:"Montserrat";
+    font-weight: 500;
+}
+.content_area .historyNav ul li a{
+    padding: 15px 20px;
+    color: #777;
+    position: relative;
+}
+.content_area .historyNav ul li a:hover{
+    background: #fff;
+    color: #8E684C;
+}
+.content_area .historyNav ul li a::after{
+    content: ''; display: block;
+    width: 0; height: 3px;
+    background: #8E684C;
+    position: absolute; left: 50%; bottom: 0;
+    transform: translateX(-50%);
+    transition: all .3s ease;
+} 
+.content_area .historyNav ul li a:hover::after{
+    content: ''; display: block;
+    width: 100%; height: 3px;
+    background: #8E684C;
+    position: absolute; left: 50%; bottom: 0;
+    transform: translateX(-50%);
+} 
+
+.text{position: fixed; right:0; top: 0;
+    font-size: 50px; z-index: 100}
+
+
+
+/* history 섹션 */
+.history {width: 1200px; margin: 0 auto;}
+
+/* .history .his2020s, .his2010s, .his2000s,
+.his1990s, .his1980s, .his1970
+{ position: relative;
+    opacity: 0; 
+    transform: scale(.9);
+    transition: all 0.3s
+}
+.history .boxMove{
+    top:0; 
+    opacity: 1 ; 
+    transform: scale(1);
+} */
+
+.history img{padding-top: 50px; padding-bottom: 100px;
+/* border-radius: 80px 0 80px ; */
+}
+    
+.history .his2020s img{margin-top: 50px;}
+
+/* .history hr{background:#d9d9d9; height:1px; border:0;
+    margin-top: 50px;
+    margin-bottom: 150px;
+} */
+
+.history ul li .his_1979{margin-bottom: 150px;}
+
+/* 년도별 css */
+.history ul{width: 800px;
+    position: relative ; left: 380px; top: -85px;
+    margin-top: 12px;
+}
+.history span{
+    font-family:"Montserrat";
+    font-size: 3.13rem;
+    font-weight: 700;
+    display: block;
+    width: 380px;
+}
+.history span::before{
+    content: ''; display: block;
+    width: 170px; height: 2px;
+    background: #d9d9d9;
+    position: relative; left: 180px; top: 32px;
+}
+.history span::after{
+    content: ''; display: block;
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    border: 4px solid #8E684C;
+    box-sizing: content-box;
+    background: #FFCCA8;
+    position: relative; left: 340px; bottom: 42px;
+}
+
+
+/* history list */
+.history ul li dl{
+    display: flex;
+    flex-direction: row;
+}
+.history ul li dl dt{
+    font-family:"Montserrat";
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: #8E684C;
+    text-align: center;
+    display: block;
+    width: 50px;
+    padding-top: 6px;
+}
+.history ul li dl dt::after{
+    content: ''; display: block;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #d9d9d9;
+    position: relative; left: 56px; bottom: 20px;
+}
+.history ul li dl dd{
+    font-size: 1.38rem;
+    line-height: 2.5rem;
+    margin-left: 30px;
+}

@@ -1,0 +1,243 @@
+#content .title_area h2::before{content: 'Talent Model'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* 인재상의 본문 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 1200px; margin: 0 auto;  }
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2.5rem; color:#8E684C; text-align:center; font-weight: 600;}
+.content_area .p1{font-size: 1.56rem; color:#555; text-align:center; width: 850px; margin: 0 auto; margin-top: 50px; margin-bottom: 150px; line-height: 2.8rem; }
+
+.content_area ul{overflow: hidden;}
+.content_area .model li{width: 365px; 
+    float: left; text-align: center; margin-right: 50px;
+}
+.content_area .model li:last-of-type{margin-right: 0px;}
+.content_area .model li div{width: 365px; height: 335px;}
+.content_area .model li .m1{background: url(../images/content1/bg1.png) no-repeat; transform: rotate(360deg);}
+.content_area .model li .m2{background: url(../images/content1/bg2.png) no-repeat;}
+.content_area .model li .m3{background: url(../images/content1/bg3.png) no-repeat;}
+.content_area .model li h4{font-size: 1.88rem; color: #fff; padding: 130px 0 15px;}
+.content_area .model li span{font-size: 1.38em; color: #fff;}
+.content_area .model li p{font-size: 1.38em; color: #555; width: 270px; margin: 0 auto; margin-top: 50px; line-height: 2.5rem; margin-bottom: 200px;}
+
+
+
+/* tab 섹션 전체 css  */
+
+.content_area hr{
+    width: 1200px;
+    background:#d9d9d9; 
+    height:1px; 
+    border:0;
+    margin: 0 auto;
+}
+
+.content_area .tabmenu{
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.content_area .tabmenu .tab{
+    display: block; 
+    width: 300px;
+    font-size: 1.25rem;
+    text-align: center;
+    position: absolute; left: 0; top: 0;
+    padding: 15px 0; 
+    transition: all .5s ease-out;
+}
+.content_area .tabmenu a.tab1{left:300px;}
+.content_area .tabmenu a.tab2{left:600px;}
+
+.content_area .tabmenu h4:first-of-type::after{
+    content: '';
+    display: block;
+    width: 100%; height: 1px;
+    background: #d9d9d9;
+    position: relative; top: -1px;
+}
+.content_area .tabmenu h4{font-weight: 500;}
+.content_area .tabmenu h4 a{color: #777;}
+
+    .content_area .tabmenu h4 a::after {
+        content: '';
+        display: block;
+        width: 0; height: 3px;
+        background: #8E684C;
+        position: absolute; left: 50%; bottom: 0;
+        transform: translateX(-50%);
+        transition: all .3s ease;
+    }
+    .content_area .tabmenu h4 a:hover::after{
+        width: 100%; height: 3px;
+        position: absolute; left: 50%; bottom: 0;
+        transform: translateX(-50%);
+    }
+
+
+.content_area .tabmenu .contlist{
+    margin: 50px 0 150px; 
+    display: none;
+}
+
+
+/* tr 부문 */
+
+
+.content_area .tabmenu h5{
+    font-size: 2.19rem; color: #8E684C; 
+    text-align: center; margin:100px 0 30px;
+}
+
+.content_area .tabmenu h5:first-of-type::before{
+    content: 'Mission'; display: block;
+    font-size: 1rem; font-weight: 400;
+    text-align: center; 
+    color: #C8A992;
+}
+.content_area .tabmenu h5:last-of-type::before{
+    content: 'Value'; display: block;
+    font-size: 1rem; font-weight: 400;
+    color: #C8A992;
+}
+.content_area .tabmenu span{
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+    display: block;
+}
+.content_area .tabmenu .tr p{
+    font-size: 1.38rem; text-align: center;
+    line-height: 2.7rem;
+    display: block; color: #555;
+    width: 540px; margin: 0 auto;
+}
+
+
+
+.content_area .tabmenu .tr ul { display: flex; justify-content: space-evenly;}
+.content_area .tabmenu .tr ul li{ margin: 0 5px;}
+.content_area .tabmenu .tr ul li div{
+    width: 380px; height: 470px; 
+    border: 1px solid #fff; box-sizing: border-box;
+    background: #F6F5F3;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+.content_area .tabmenu .tr ul li:hover div{
+    transform: rotateX(180deg);
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+.content_area .tabmenu .tr ul li .num{
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 16.25rem;
+    font-weight: 600;
+    color: #fff;
+    position: absolute; right: 0; bottom: -120px;
+   
+}
+.content_area .tabmenu .tr ul li:hover .num{
+    display: block;
+    font-family: 'Montserrat';
+    font-size: 9.38rem;
+    font-weight: 300;
+    text-align: left;
+    position: absolute; left: 35px; bottom:-30px;
+    transform: rotateX(180deg);
+}
+
+.content_area .tabmenu .tr ul li dl{
+    text-align: left;
+    padding: 100px 50px 70px 50px;
+    transform: rotateX(180deg);
+}
+.content_area .tabmenu .tr ul li dt{opacity: 0;}
+
+.content_area .tabmenu .tr ul li:hover dt{
+    font-family: 'Montserrat';
+    font-size: 3.13rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    opacity: 1;
+}
+.content_area .tabmenu .tr ul li:nth-child(1) dt{color: #212668;}
+.content_area .tabmenu .tr ul li:nth-child(2) dt{color: #EA463D;}
+.content_area .tabmenu .tr ul li:nth-child(3) dt{color: #F49801;}
+
+.content_area .tabmenu .tr ul li dd{
+    font-size: 1.38rem;
+    color: #777;
+    opacity: 0;
+}
+.content_area .tabmenu .tr ul li:hover dd{opacity: 1;}
+.content_area .tabmenu .tr ul li:hover:nth-child(1) .num{color: #D6EEFF;}
+.content_area .tabmenu .tr ul li:hover:nth-child(2) .num{color: #FBDBD9;}
+.content_area .tabmenu .tr ul li:hover:nth-child(3) .num{color: #FDE7C6;}
+
+
+
+/* 호텔&레저 부문 */
+.content_area .tabmenu .hp p{
+    font-size: 1.38rem; text-align: center;
+    line-height: 2.7rem;
+    display: block; color: #555;
+    width: 1200px; margin: 0 auto;
+}
+.content_area .tabmenu .hp span{
+    color: #555;
+}
+.content_area .tabmenu .hp span strong{
+    color: #333;
+}
+.content_area .tabmenu .hp ul {padding: 10px 5px; display: flex; flex-wrap: wrap; gap: 5px; justify-content: center;}
+.content_area .tabmenu .hp ul li{
+    width: 580px; height: 240px;
+    background: #FAFAFA;
+    transition: all .3s ease-out;
+}
+.content_area .tabmenu .hp ul li:hover{
+    /* width: 600px; height: 250px; */
+    border: 7px solid #DCF6D4;
+    box-sizing: border-box;
+    background: #fff;
+    transform: scale(1.05);
+}
+.content_area .tabmenu .hp ul li dl{
+    padding: 70px 0 0 40px;
+}
+.content_area .tabmenu .hp ul li:hover dl{
+    padding: 65px 0 0 40px;
+}
+    .content_area .tabmenu .hp ul li dl dt{
+        font-family: 'Montserrat';
+        font-size: 2.19rem;
+        font-weight: 600;
+        color: #A7A7A7;
+        margin-bottom: 20px;
+    }
+    .content_area .tabmenu .hp ul li dl dt .fir{
+        font-size: 2.19rem;
+        font-weight: 600;
+        color: #555;
+        display: inline;
+    }
+    .content_area .tabmenu .hp ul li dl dd{
+        font-size: 1.38rem;
+        color: #777;
+    }
+    .content_area .tabmenu .hp ul li:hover dl dt{
+        color: #111;
+    }
+    .content_area .tabmenu .hp ul li:hover dl dt .fir{
+        color: #111;
+    }

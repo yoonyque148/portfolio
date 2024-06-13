@@ -1,0 +1,189 @@
+
+#content .title_area h2::before{content: 'Business Travel Management'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* SBTM사업의 실제 본문 내용 */ 
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;}
+
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2.5rem; color:#8E684C; text-align:center; font-weight: 600;}
+.content_area .p1{font-size: 1.56rem; color:#555; text-align:center; width: 1150px; margin: 0 auto; margin-top: 50px; margin-bottom: 150px; line-height: 2.8rem; }
+
+
+/* section 1 영역 */
+
+#sec1 {width: 2000px; margin: 0 auto;
+    background: url(../images/content4/sbtm.jpg) 0 0  no-repeat;
+    padding: 132px 0;
+}
+#sec1 h4{font-size: 2.81rem; 
+    position: relative; left: 45%; top: 0;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    line-height: 4.2rem;
+}
+#sec1 p {
+    color: #fff;
+    width: 600px;
+    position: relative; left: 50%; top:0;
+    margin: 60px 0;
+    font-size: 1.56rem;
+    line-height: 2.6rem;
+    text-align: justify;
+}
+#sec1 a {
+    width: 300px; height: 55px;
+    padding-top: 15px;
+    color: #fff;
+    position: relative; left: 50%; top:0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    transition: all .3s ease-out;
+}
+#sec1 a:hover {
+    background: #423124;
+    border: 1px solid #1b1b1bc1;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    transform: scale(1.05);
+}
+
+
+/* section 2 영역 */
+#sec2 {width: 1200px; margin: 140px auto 150px;}
+
+#sec2 h4{font-size: 2.5rem; text-align: center; }
+#sec2 .p2{font-size: 1.38rem; line-height: 2.5rem; text-align: center; margin: 40px 0 100px;}
+
+#sec2 ul{display: flex; }
+#sec2 ul li{
+    width: 300px; height: 300px;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+    position: relative; left: 0; top: 0;
+    transition: all .2s linear;
+}
+#sec2 ul li dl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#sec2 ul li dl dt span{font-size: 5rem; color: #d9d9d9; padding-top: 70px;}
+#sec2 ul li dl dt p{font-size: 1.75rem; font-weight: 700; margin: 10px}
+#sec2 ul li dl dd{font-size: 1.38rem; color: #6a6a6a; margin-bottom: 65px;}
+
+#sec2 ul li:hover {background: #07356B; position: relative; left: 0; top: -30px;}
+#sec2 ul li:hover dl span{color: #FFCCA8;}
+#sec2 ul li:hover dl dt{color: #fff;}
+#sec2 ul li:hover dl dd{color: #fff;}
+
+/* section 3 영역 */
+#sec3 {width: 100%; margin: 0 auto; background: #F5F5F5;}
+
+#sec3 h4{font-size: 2.5rem; text-align: center; }
+#sec3 p{font-size: 1.38rem; line-height: 2.5rem; text-align: center; margin: 40px 0 60px;}
+
+#sec3 .sec3_con{width: 1200px; margin: 0 auto; padding: 150px 0; overflow: hidden;}
+
+#sec3 .sec3_con ul{position: relative;}
+
+#sec3 .sec3_con ul li{
+    width:1200px; height:250px; 
+    border-radius: 30px;
+    position: relative;
+    transition: all .3s ease-out;
+    transition-delay: .3s;
+    filter: grayscale(100%);
+    margin-bottom: 20px;
+}
+#sec3 .sec3_con ul li:hover{
+    height: 500px; 
+    position: relative;
+    transition: all .3s ease-out;
+    overflow: hidden;
+    filter: grayscale(0);
+}
+
+#sec3 .sec3_con ul li:first-child{background: url(../images/content4/img1.jpg);}
+#sec3 .sec3_con ul li:nth-child(2){background: url(../images/content4/img2.jpg);}
+#sec3 .sec3_con ul li:last-child{background: url(../images/content4/img3.jpg);
+}
+#sec3 .sec3_con ul li dl {
+    width: 430px; height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.56rem;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+#sec3 .sec3_con ul li:nth-child(1) dl,
+#sec3 .sec3_con ul li:nth-child(3) dl{
+    position: absolute; right: -430px; top: 0;
+}
+#sec3 .sec3_con ul li:nth-child(2) dl{
+    position: absolute; left: -430px; top: 0;
+}
+
+#sec3 .sec3_con ul li:nth-child(1):hover dl,
+#sec3 .sec3_con ul li:nth-child(3):hover dl{
+    position: absolute; right: 0; top: 0;
+    
+}
+#sec3 .sec3_con ul li:nth-child(2):hover dl{
+    position: absolute; left: 0; top: 0;
+}
+
+#sec3 .sec3_con ul li:nth-child(1) dl dt{
+    font-size: 2.19rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 110px 0 170px; 
+}
+#sec3 .sec3_con ul li:nth-child(2) dl dt,
+#sec3 .sec3_con ul li:nth-child(3) dl dt{
+    font-size: 2.19rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 110px 0 145px; 
+}
+#sec3 .sec3_con ul li:nth-child(1) dl dt::after{
+    content: ''; display: block;
+    width: 2px; height: 100px;
+    background: #ffffff88;
+    position: absolute; left: 50%; top: 190px;
+    margin-bottom: 40px;
+}
+#sec3 .sec3_con ul li:nth-child(2) dl dt::after,
+#sec3 .sec3_con ul li:nth-child(3) dl dt::after{
+    content: ''; display: block;
+    width: 2px; height: 80px;
+    background: #ffffff88;
+    position: absolute; left: 50%; top: 190px;
+    margin-bottom: 40px;
+}
+
+#sec3 .sec3_con ul li:nth-child(1) dl dd{
+    font-size: 1.56rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;   
+}
+#sec3 .sec3_con ul li:nth-child(2) dl dd,
+#sec3 .sec3_con ul li:nth-child(3) dl dd{
+    font-size: 1.56rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;   
+}
+

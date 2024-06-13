@@ -1,0 +1,108 @@
+#content .title_area h2::before{content: 'Vision&Mission'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* 비전&미션의 실제 본문 내용 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%;}
+
+/* section1 */
+
+.content_area section h3{font-family:"Noto Serif KR" ; font-size: 2.5rem; color:#8E684C; text-align:center; font-weight: 600;}
+.content_area section .p1{font-size: 1.56rem; color:#555; text-align:center; width: 990px; margin: 0 auto; margin-top: 50px; margin-bottom: 150px; line-height: 2.8rem; }
+
+.content_area hr{width: 2000px; background:#ccc; height:1px; border:0;}
+.content_area h4{font-size: 2.81rem; text-align: center; }
+
+/* sec vision */
+
+.content_area .vision{width: 1200px; margin: 180px auto; position: relative;}
+.content_area .vision span{display: block; 
+    font-family:"Montserrat"; 
+    font-size: 5rem;     
+    font-weight: 700;
+    line-height: 7rem; 
+    color: #ffcca881; margin: 100px 0 0;}
+.content_area .vision p{font-size: 1.75rem; text-align: right; position: absolute; right: 0; bottom: 0; line-height: 3rem; }
+
+/* sec mission */
+.content_area .mission{
+    width: 100%; margin: 0 auto;
+    background:url(../images/content2/mission.jpg) no-repeat;}
+
+.content_area .mission div{width: 1200px; margin: 0 auto; padding: 155px 0;}
+.content_area .mission h4{color: #fff; }
+.content_area .mission p{font-size: 1.25rem; color: #fff; text-align: center; margin-top: 30px;}
+
+.content_area .mission .mission_list{
+    overflow: hidden; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+ 
+.content_area .mission dl{
+    border: 1px solid #ffcca881;
+    border-radius: 30px;
+    width: 360px; height: 420px;
+    box-sizing: border-box; 
+    background: rgba(0, 0, 0, 0.15);
+    float: left;
+    margin-top: 100px;
+    padding: 30px;
+    transition: all .5s ease-out;
+}
+.content_area .mission dl:hover{
+    border: 8px solid #FFCCA8;
+    background: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-top: 100px;
+    padding: 30px;
+    transform: scale(1.1);
+}
+.content_area .mission dl dt{
+    font-size: 1.75rem; 
+    font-weight: 600;
+    color: #ffcca8; 
+    text-align: center;
+    margin: 50px 0 ;    
+}
+.content_area .mission dl dd{
+    font-size: 1.25rem;
+    color: #fff; 
+    text-align: center;
+    line-height: 2.3rem; 
+    margin: 0 auto;
+}
+
+/* sec value */
+.content_area .value{width: 1200px; margin:0 auto; padding: 150px 0;}
+.content_area .value ul{overflow: hidden; margin-top: 50px;}
+.content_area .value ul li{
+   width: 300px; text-align: center; float: left;
+}
+.content_area .value ul li span{  
+    font-size: 2.5rem;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    color: #8E684C;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 50px;
+    margin: 50px 0 30px;
+    transition: all .4s ease-out;
+}
+.content_area .value ul li:hover span{  
+    color: #fff;
+    background: #8E684C;
+    transform: rotateY(360deg);
+}
+.content_area .value ul li p{display: block;
+    font-size: 1.38rem ;
+}
+

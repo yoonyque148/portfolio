@@ -1,0 +1,158 @@
+#content .title_area h2::before{content: 'Hospitality Business'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; top: 120px; color: #8E684C; }
+
+/* 호텔사업의 실제 본문 내용 */ 
+
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;  }
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2.5rem; color:#8E684C; text-align:center; font-weight: 600;}
+.content_area .p1{font-size: 1.56rem; color:#555; text-align:center; width: 967px; margin: 0 auto; margin-top: 50px; margin-bottom: 150px; line-height: 2.8rem; }
+
+
+.content_area .full_bg {
+    width: 2000px; height: 400px;
+    background: url(../images/content1/full_img.jpg) no-repeat; 
+    position: relative; left: 50%; top: 0; 
+    margin-left: -1000px;
+    margin-bottom: 150px;
+}
+.content_area .full_bg p:nth-child(1){
+    color: #fff;
+    font-size: 2.19rem;
+    font-family: "Noto Serif KR";
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .5), 
+    0 0 5px rgba(0, 0, 0, .5);
+    padding-top: 150px;
+}
+.content_area .full_bg p:nth-child(2){
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .5), 
+    0 0 5px rgba(0, 0, 0, .5);
+    margin-top: 25px;
+}
+.content_area hr{
+    width: 1200px;
+    background:#d9d9d9; 
+    height:1px; 
+    border:0;
+    margin: 0 auto;
+}
+
+
+
+/* 호텔 탭 메뉴 */
+
+.content_area .tabmenu{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 60px 0;
+    overflow: hidden;
+}
+.content_area .tabmenu .tab{
+    display: block; 
+    width: 200px;
+    font-size: 1.25rem;
+    text-align: center;
+    position: absolute; left: 0; top: 0;
+    padding: 15px 0; 
+    transition: all .5s ease-out;
+}
+.content_area .tabmenu a.tab1{left:200px;}
+.content_area .tabmenu a.tab2{left:400px;}
+.content_area .tabmenu a.tab3{left:600px;}
+.content_area .tabmenu a.tab4{left:800px;}
+
+
+.content_area .tabmenu h4:first-of-type::after{
+    content: '';
+    display: block;
+    width: 100%; height: 1px;
+    background: #d9d9d9;
+    position: relative; top: -1px;
+}
+
+.content_area .tabmenu h4{
+    font-weight: 500;
+}
+.content_area .tabmenu h4:hover{
+}
+.content_area .tabmenu h4 a{
+    color: #777;
+}
+.content_area .tabmenu h4 a:hover{
+    /* background: #FFF8F2; */
+}
+    .content_area .tabmenu h4 a::after {
+        content: '';
+        display: block;
+        width: 0; height: 3px;
+        background: #8E684C;
+        position: absolute; left: 50%; bottom: 0;
+        transform: translateX(-50%);
+        transition: all .3s ease;
+    }
+   
+    .content_area .tabmenu h4 a:hover::after{
+        width: 100%; height: 3px;
+        position: absolute; left: 50%; bottom: 0;
+        transform: translateX(-50%);
+    }
+
+
+
+
+/* 호텔 소개 내부 콘텐츠 */
+
+.content_area .tabmenu .contlist {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    display: none;
+    line-height: 1.5rem;
+    overflow: hidden;
+} 
+
+.content_area .tabmenu .contlist .img_con{overflow: hidden;}
+
+.content_area .tabmenu .seoul img:nth-child(1), 
+.content_area .tabmenu .monogram img:nth-child(1)
+{float: left;}
+
+.content_area .tabmenu .seoul img:nth-child(2),
+.content_area .tabmenu .monogram img:nth-child(2)
+{float: right; margin: 265px 0;}
+
+.content_area .tabmenu .jeju img:nth-child(1), 
+.content_area .tabmenu .stay img:nth-child(1)
+{float: right;}
+
+.content_area .tabmenu .jeju img:nth-child(2),
+.content_area .tabmenu .stay img:nth-child(2)
+{float: left; margin: 265px 0;}
+
+
+.content_area .tabmenu .contlist .text_con h5{
+    display: block;
+    font-family:"Noto Serif KR" ;
+    font-weight: 600;
+    font-size: 2.5rem; 
+    color:#8E684C;
+    margin: 70px 0 35px;
+}
+.content_area .tabmenu .contlist .text_con p{
+    display: block;
+    font-size: 1.25rem; 
+    line-height: 2.2rem;
+}
+
+.content_area .tabmenu .seoul .text_con,
+.content_area .tabmenu .monogram .text_con{}
+
+.content_area .tabmenu .jeju .text_con,
+.content_area .tabmenu .stay .text_con
+{text-align: right;}
