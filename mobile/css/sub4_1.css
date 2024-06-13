@@ -1,0 +1,236 @@
+#content .title_area h2::before{
+    content: 'Talent Model'; display: block;
+    position: absolute; width: 100%; font-size: 1rem; font-weight: 400; text-align: center; bottom: 45px; color: #8E684C; }
+
+/* 인재상의 실제 본문 내용 */ 
+
+
+
+/* 인재채용 - 인재상 */ 
+
+/* content_area 영역 */
+.content_area{width: 100%; margin: 0 auto;  }
+.content_area h3{font-family:"Noto Serif KR" ; font-size: 2rem; color:#8E684C; text-align:center; font-weight: 600;
+    margin-top: 5%;}
+.content_area .p1{
+    font-size: 1.2rem; color:#555; 
+    text-align:center; width: 90%;
+    margin: 0 auto; margin-top: 5%; margin-bottom: 15%;
+    line-height: 2.2rem;
+}
+
+.content_area .swiper-container {margin-bottom: 80px;} 
+.content_area ul{width: 100%; display: flex; margin-bottom: 20px;} 
+.content_area .model li{
+    width: 70%; margin: 0 10% 0 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+/* .content_area .model li div{width: 320px; height: 280px;
+   text-align: center;
+} */
+.content_area .model li img{
+    width: 100%;
+}
+.content_area .model li .m1{
+    position: absolute; left: 0; top: -20px;
+    width: 100%; margin: 0 auto; height: 100%;
+}
+.content_area .model li .m2{
+    position: absolute; left: 0; top: -20px;
+    width: 100%; margin: 0 auto; height: 100%;
+}
+.content_area .model li .m3{
+    position: absolute; left: 0; top: -20px;
+    width: 100%; margin: 0 auto; height: 100%;
+}
+.content_area .model li h4{
+    width: 100%;
+    font-size: 1.8rem; color: #fff;
+    text-align: center;
+    padding: 110px 0 20px;}
+.content_area .model li span{font-size: 1.1rem; color: #fff;}
+.content_area .model li p{
+    font-size: 1.2rem; color: #555;
+    width: 100%; margin: 0 5%;
+    margin-top: 20px;
+    line-height: 2rem;
+    margin-bottom: 30px;
+}
+.swiper-scrollbar-drag{background: #7e9ec481;}
+
+.swiper-scrollbar{margin: 30px auto;}
+
+
+/* tab 섹션 전체 css  */
+
+.content_area hr{
+    width: 100%;
+    background:#d9d9d9; 
+    height:1px; 
+    border:0;
+    margin: 0 auto;
+}
+
+.content_area .tabmenu{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    padding: 60px 0;
+}
+.content_area .tabmenu img{
+    width: 100%;
+    margin: 0 auto;
+}
+.content_area .tabmenu .tab{
+    display: block; 
+    width: 40%; margin: 0 10%;
+    font-size: 1.25rem;
+    text-align: center;
+    position: absolute; left: 0; top: 0;
+    padding: 15px 0; 
+    transition: all .5s ease-out;
+}
+.content_area .tabmenu a.tab1{left:0;}
+.content_area .tabmenu a.tab2{left:40%;}
+
+.content_area .tabmenu h4:first-of-type::after{
+    content: '';
+    display: block;
+    width: 100%; height: 1px;
+    background: #d9d9d9;
+    position: relative; top: -5px;
+}
+.content_area .tabmenu h4{font-weight: 500;}
+.content_area .tabmenu h4 a{color: #777;}
+    .content_area .tabmenu h4 a::after {
+        content: '';
+        display: block;
+        width: 0; height: 3px;
+        background: #8E684C;
+        position: absolute; left: 50%; bottom: 0;
+        transform: translateX(-50%);
+        transition: all .3s ease;
+    }
+    .content_area .tabmenu h4 a:hover::after{
+        width: 100%; height: 3px;
+        position: absolute; left: 50%; bottom: 0;
+        transform: translateX(-50%);
+    }
+.content_area .tabmenu .contlist{
+    margin: 50px 0 60px; 
+    display: none;
+}
+
+
+/* tr 부문 */
+
+
+.content_area .tabmenu h5{
+    width: 90%; margin: 0 5%;
+    font-size: 2rem; color: #8E684C; 
+    padding: 20px 0;
+    border-bottom: 2px solid #8E684C;
+}
+
+.content_area .tabmenu .tr1::before{
+    content: 'Mission'; display: block;
+    font-size: 1.1rem; font-weight: 400;
+    text-align: right; color: #C8A992;
+    position: relative; bottom: -40px;
+}
+.content_area .tabmenu .tr2::before{
+    content: 'Value'; display: block;
+    font-size: 1.1rem; font-weight: 400;
+    text-align: right; color: #C8A992;
+    position: relative; bottom: -40px;
+}
+.content_area .tabmenu span.txt{
+    width: 90%; margin: 20px 5%;
+    font-size: 1.5rem;
+    color: #111;
+    font-weight: 600;
+    display: block;
+}
+.content_area .tabmenu .tr p{
+    width: 90%; margin: 0 5%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    display: block; color: #555;
+    margin-bottom: 20px;
+}
+
+.content_area .tabmenu .tr ul{
+    display: flex;
+    flex-direction: column;
+}
+.content_area .tabmenu .tr ul li{
+    width: 90%; margin: 0 5%;
+    margin-bottom: 20px;
+}
+.content_area .tabmenu .tr ul li dl{
+}
+.content_area .tabmenu .tr ul li dl dt{
+    width: 100%;
+    font-family: 'Montserrat';
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.content_area .tabmenu .tr ul li:nth-child(1) dt{color: #212668;}
+.content_area .tabmenu .tr ul li:nth-child(2) dt{color: #EA463D;}
+.content_area .tabmenu .tr ul li:nth-child(3) dt{color: #F49801;}
+
+.content_area .tabmenu .tr ul li dd{
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+
+
+/* 호텔&레저 부문 */
+.content_area .tabmenu .hp p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    display: block; color: #555;
+    width: 90%; margin: 0 5%;
+}
+.content_area .tabmenu .hp span{
+    color: #333;
+}
+.content_area .tabmenu .hp span strong{
+    font-size: 1.5rem;
+    color: #111;
+}
+.content_area .tabmenu .hp ul {
+    display: flex;
+    flex-direction: column;
+}
+.content_area .tabmenu .hp ul li{
+    width: 90%; margin: 0 5%;
+    margin-top: 10px;
+}
+.content_area .tabmenu .hp ul li dl{
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+}
+.content_area .tabmenu .hp ul li dl dt{
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content_area .tabmenu .hp ul li:nth-child(1) dt{color: #212668;}
+.content_area .tabmenu .hp ul li:nth-child(2) dt{color: #EA463D;}
+.content_area .tabmenu .hp ul li:nth-child(3) dt{color: #F49801;}
+.content_area .tabmenu .hp ul li:nth-child(4) dt{color: #2aad01;}
+.content_area .tabmenu .hp ul li dl dd{
+    font-size: 1.2rem;
+    color: #777;
+   
+}
+

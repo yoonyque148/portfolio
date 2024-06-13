@@ -1,0 +1,41 @@
+/* 서브페이지 공통 css*/
+
+/* visual 영역 */
+
+.visual{width: 100%; position: relative;}
+.visual img{width: 100%; margin-top: 70px;}
+.visual span{display: block;
+    font-size: 1.5rem; color: #fff; text-align: center;
+    width: 100%; position: absolute; left:0; top: 60%; 
+}
+
+    
+/* sub_nav 영역 */
+
+.sub_nav{width: 100%; border-bottom: 1px solid #c1c1c1;}
+.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav li{width: 50%; float: left; text-align: center;}
+.sub_nav li a{font-size: 1.1rem; font-weight: 400; color: #777;
+    padding: 10px 0; transition: all .5s ease-out ;}
+.sub_nav li a:hover, .sub_nav li .current{background: #8E684C; color: #fff; font-weight: 500;
+}
+
+
+/* title_area 영역 */
+#content{width: 100%; margin: 0 auto; position: relative;}
+#content .title_area{width: 100%; position: relative;}
+#content .title_area h2{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+/* h2-before 위치 - 각각의 content.css 안 상단  */
+#content .title_area h2::after{
+    content: ''; display: block;
+    background: #FFCCA8; 
+    position: absolute; width: 3px; height: 50px; 
+    left:50%; top: 60px;
+}
