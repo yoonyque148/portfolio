@@ -16,7 +16,8 @@ position: relative; left: 50%; top: 0; margin-left: -1000px;
 /* sub_nav 영역 */
 
 .sub_nav{width: 100%; border-bottom: 1px solid #c1c1c1;}
-.sub_nav ul{overflow: hidden; width: 100%; margin: 0 auto;}
+.sub_nav ul{overflow: hidden; width: 1200px; margin: 0 auto;}
+
 .sub_nav li{width: 25%; float: left; text-align: center;}
 .sub_nav li a{font-size: 1.25rem; font-weight: 500; color: #777;
     padding: 15px; transition: all .5s ease-out ;}
