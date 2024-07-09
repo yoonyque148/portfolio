@@ -83,6 +83,9 @@ $(function(){
                     },
                 });
 
+                // 클릭 전 첫번쨰 li 활성하기
+                $('.ar_li ul li:eq(0)').addClass('active');
+
                 // 클릭 이벤트 추가
                 $('.ar_li').on('click', 'li', function(){
                 var $clickedImgSrc = $(this).find('img').attr('src');
@@ -190,6 +193,9 @@ $(function(){
                         },
                     },
                 });
+
+                // 클릭 전 첫번쨰 li 활성하기
+                $('.dmr_li ul li:eq(0)').addClass('active');
 
                 // 클릭 이벤트 추가
                 $('.dmr_li').on('click', 'li', function(){
@@ -299,6 +305,9 @@ $(function(){
                     },
                 });
 
+                // 클릭 전 첫번쨰 li 활성하기
+                $('.smg_li ul li:eq(0)').addClass('active');
+
                 // 클릭 이벤트 추가
                 $('.smg_li').on('click', 'li', function(){
                 var $clickedImgSrc = $(this).find('img').attr('src');
@@ -386,6 +395,9 @@ $(function(){
                     },
                     
                 });
+
+                // 클릭 전 첫번쨰 li 활성하기
+                $('.sr_li ul li:eq(0)').addClass('active');
 
                 // 클릭 이벤트 추가
                 $('.sr_li').on('click', 'li', function(){
@@ -488,6 +500,9 @@ $(function(){
                     },
                 });
 
+                // 클릭 전 첫번쨰 li 활성하기
+                $('.throw_li ul li:eq(0)').addClass('active');
+
                 // 클릭 이벤트 추가
                 $('.throw_li').on('click', 'li', function(){
                 var $clickedImgSrc = $(this).find('img').attr('src');
@@ -589,6 +604,9 @@ $(function(){
                     
                     },
                 });
+
+                // 클릭 전 첫번쨰 li 활성하기
+                $('.etc_li ul li:eq(0)').addClass('active');
 
                 // 클릭 이벤트 추가
                 $('.etc_li').on('click', 'li', function(){
