@@ -1,109 +1,30 @@
 {
-    "rest": [
-      {
-        "Image": "./images/content1/img1.jpg",
-        "Num": "1호점",
-        "Shop": "신성할망식당"
-      },
-      {
-        "Image": "./images/content1/img2.jpg",
-        "Num": "2호점",
-        "Shop": "동동차이나"
-      },
-      {
-        "Image": "./images/content1/img3.jpg",
-        "Num": "3호점",
-        "Shop": "메로식당"
-      },
-      {
-        "Image": "./images/content1/img4.jpg",
-        "Num": "4·7호점",
-        "Shop": "보말과풍경"
-      },
-      {
-        "Image": "./images/content1/img5.jpg",
-        "Num": "6호점",
-        "Shop": "진미네식당"
-      },
-      {
-        "Image": "./images/content1/img6.jpg",
-        "Num": "9호점",
-        "Shop": "해성도뚜리"
-      },
-      {
-        "Image": "./images/content1/img7.jpg",
-        "Num": "10호점",
-        "Shop": "천보식당"
-      },
-      {
-        "Image": "./images/content1/img8.jpg",
-        "Num": "8-11호점",
-        "Shop": "행복맛집"
-      },
-      {
-        "Image": "./images/content1/img9.jpg",
-        "Num": "12호점",
-        "Shop": "청춘테이블"
-      },
-      {
-        "Image": "./images/content1/img10.jpg",
-        "Num": "13호점",
-        "Shop": "낭쿰낭쿰"
-      },
-      {
-        "Image": "./images/content1/img11.jpg",
-        "Num": "14호점",
-        "Shop": "제주돔베막국수"
-      },
-      {
-        "Image": "./images/content1/img12.jpg",
-        "Num": "16호점",
-        "Shop": "제주콩순옥"
-      },
-      {
-        "Image": "./images/content1/img13.jpg",
-        "Num": "17호점",
-        "Shop": "함덕쉼팡"
-      },
-      {
-        "Image": "./images/content1/img14.jpg",
-        "Num": "18호점",
-        "Shop": "세평맛집"
-      },
-      {
-        "Image": "./images/content1/img15.jpg",
-        "Num": "19호점",
-        "Shop": "차이나마씸"
-      },
-      {
-        "Image": "./images/content1/img16.jpg",
-        "Num": "20호점",
-        "Shop": "시니어손맛 아리랑당"
-      },
-      {
-        "Image": "./images/content1/img17.jpg",
-        "Num": "21호점",
-        "Shop": "엄블랑디"
-      },
-      {
-        "Image": "./images/content1/img18.jpg",
-        "Num": "22호점",
-        "Shop": "뉴 남원분식"
-      },
-      {
-        "Image": "./images/content1/img19.jpg",
-        "Num": "24호점",
-        "Shop": "비양도식당"
-      },
-      {
-        "Image": "./images/content1/img20.jpg",
-        "Num": "25호점",
-        "Shop": "동문칼국수"
-      },
-      {
-        "Image": "./images/content1/img20.jpg",
-        "Num": "26호점",
-        "Shop": "용담생국수"
-      }      
+    "rest1": [
+        { "Num": "1호점", "Shop": "신성할망식당" },
+        { "Num": "2호점", "Shop": "동동차이나" },
+        { "Num": "3호점", "Shop": "메로식당" },
+        { "Num": "4·7호점","Shop": "보말과풍경" },
+        { "Num": "6호점", "Shop": "진미네식당" },
+        { "Num": "9호점", "Shop": "해성도뚜리" },
+        { "Num": "10호점", "Shop": "천보식당" },
+        { "Num": "8·11호점", "Shop": "행복맛집" },
+        { "Num": "12호점", "Shop": "청춘테이블" },
+        { "Num": "13호점", "Shop": "낭쿰낭쿰" },
+        { "Num": "14호점", "Shop": "제주돔베막국수" }
+    ],
+    "rest2": [
+        { "Num": "16호점", "Shop": "제주콩순옥" },
+        { "Num": "17호점", "Shop": "함덕쉼팡" },
+        { "Num": "18호점", "Shop": "세평맛집" },
+        { "Num": "19호점", "Shop": "차이나마씸" },
+        { "Num": "20호점", "Shop": "시니어손맛 아리랑" },
+        { "Num": "21호점", "Shop": "엄블랑디" },
+        { "Num": "22호점", "Shop": "뉴 남원분식" },
+        { "Num": "23호점", "Shop": "혜자이모네" },
+        { "Num": "24호점", "Shop": "비양도식당" },
+        { "Num": "25호점", "Shop": "동문칼국수" },
+        { "Num": "26호점", "Shop": "용담생국수" }      
     ]
-  }
+}
+
+  
