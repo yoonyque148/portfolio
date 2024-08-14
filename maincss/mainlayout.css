@@ -186,7 +186,7 @@
   position: absolute; left: -400px; top: 0;
 }
 
-/*--- 오른쪽 메뉴 호버 버튼--- */
+/*--- 오른쪽 메뉴 클릭 버튼--- */
 .business ul{position: absolute; right: 0; top: 230px; z-index: 10;
 }
 .business .business_menu li::after{content: ''; width: 340px; height:2px;
@@ -202,24 +202,26 @@
   transition: all .5s ease-out;
 }
 
-.business .business_menu li:hover{  
+.business .business_menu li.active{  
   background: #8E684C;
   border-radius: 20px 0 20px;
   padding: 30px 30px;
   color: #fff;
   box-shadow: 2px 2px 10px 1px rgba(0,0,0,.3);
 }
-.business .business_menu li:hover::after{content: ''; display: none;}
+.business .business_menu li.active::after{content: ''; display: none;}
+
 .business .business_container li span{
   display: block;
   font-family:"Montserrat" ;
   font-size: 1.25rem; font-weight: 400;  
 }
-.business .business_container li:hover span{float: right; margin: 25px 20px 0; color: #ffcca8; }
-.business .business_container li:hover span{float: right; margin: 25px 20px 0; color: #ffcca8; }
+.business .business_container li span.active{
+  float: right; margin: 25px 20px 0; color: #ffcca8;
+}
 
 .business .business_container li h4{font-size: 2.19rem; font-weight: 600;position: absolute;left:220px; top:60px; transition: all .3s}
-.business .business_container li:hover h4{ left:50px; top:40px}
+.business .business_container li h4.active{ left:50px; top:40px}
 
 
 

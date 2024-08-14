@@ -1,4 +1,6 @@
-// 회사소개 img click
+
+
+// 회사소개 img hover
 
 $(document).ready(function(){
     $('.comp_img').css('background','url(./mainimages/company_b1.jpg)'); 
@@ -6,7 +8,7 @@ $(document).ready(function(){
     $('.comp_img').hide().fadeIn('slow');
     $('.company_img li:eq(0) a').css('filter','grayscale(0)').children().css('filter','grayscale(100%)');
 
-    $('.company_img li a').click(function(e){
+    $('.company_img li a').mouseenter(function(e){
         e.preventDefault();
         var ind = $(this).index('.company_img li a');  
         // console.log(ind);// 0 1 2 3 
@@ -61,22 +63,33 @@ $(document).ready(function(){
     $('.business_text dl dt').html(business[0].title);
     $('.business_text dd:eq(0)').html(business[0].text);
     $('.business_text dd:eq(1) a').attr('href','/sub2/sub2_'+business[0].link);
-    // $('.business_text ul li:eq(0) a').css('filter','grayscale(0)');  //클릭한 버튼만 컬러로 활성화
 
-    $('.business_menu ul li').mouseenter(function(e){
+    $('.business_menu ul li:eq(0)').addClass('active');
+    $('.business .business_container li:eq(0) span').addClass('active');
+    $('.business .business_container li:eq(0) h4').addClass('active');
+
+    $('.business_menu ul li').click(function(e){
         e.preventDefault();
       
         var ind = $(this).index('.business_menu ul li');  // 0~3
   
+        $('.business_menu ul li').removeClass('active');
+        $(this).addClass('active');
+
+        $('.business .business_container li span').removeClass('active');
+        $(this).find('span').addClass('active');
+
+        $('.business .business_container li h4').removeClass('active');
+        $(this).find('h4').addClass('active');
+
         $('.business_text img').attr('src','./mainimages/business'+(ind+1)+'.jpg');
         $('.business_text img').hide().fadeIn('fast');
         $('.business_text dl dt').html(business[ind].title);
         $('.business_text dd:eq(0)').html(business[ind].text);
         $('.business_text dd:eq(1) a').attr('href','./sub2/sub2_'+(ind+1)+'.html');
 
-        // $('.business .gallery-thumbs ul li a').css('filter','grayscale(100%)'); // 모든버튼 비활성화 (흑백처리)
-        // $('.business .gallery-thumbs ul li:eq('+ind+') a').css('filter','grayscale(0)');  // 클릭된 자신만 활성화
+        
     });
-  });
+});
   
   
