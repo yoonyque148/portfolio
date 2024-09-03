@@ -133,6 +133,13 @@ img{border: 0; vertical-align: top}
   width: 1400px; margin: 0 auto;
   position: relative;
 }
+#headerArea::before{
+  content: ''; display: block;
+  width: 100%; height: 1px;
+  background: #dddddd;
+  position: absolute; left: 0; top: 99px;
+  opacity: 0.5;
+}
 #headerArea .logo{float: left; margin: 35px 60px 35px 0;}
 #headerArea .logo a{
   display: block;
@@ -153,36 +160,32 @@ img{border: 0; vertical-align: top}
 }
 #headerArea #gnb ul.dropdownmenu li.menu{
   float: left;
-  width: 16.66%;
- 
+  width: 16.66%; 
+  height: 100%;
 }
 #headerArea #gnb ul.dropdownmenu li a.depth1{
   display: block;
   font-size: 1.25rem; 
   font-weight: 600;
-  padding: 35px 0 25px 0;
-  margin-bottom: 10px;
+  padding: 35px 0 ;
   text-align: center;
   transition: all .4s;
   position: relative;
 }
-#headerArea #gnb ul.dropdownmenu li h3{
-  width: 120px; margin: 0 auto;
-}
-#headerArea #gnb ul.dropdownmenu li a.depth1 span::after{
+#headerArea #gnb ul.dropdownmenu li a.depth1::after{
   content: ''; display: block;
-  width: 0; height: 8px;
+  width: 0; height: 4px;
   background: #ffdcc2;
-  position: absolute; left: 50%; bottom: 5px;
+  position: absolute; left: 50%; bottom: -1px;
   transform: translateX(-50%);
   z-index: -1;
   transition: all .3s;
 }
-#headerArea #gnb ul.dropdownmenu li:hover a.depth1 span::after{
+#headerArea #gnb ul.dropdownmenu li:hover a.depth1::after{
   content: ''; display: block;
-  width: 100%; height: 8px;
+  width: 100%; height: 4px;
   background: #ffdcc2;
-  left: 50%; bottom: 5px;
+  left: 50%; bottom: -1px;
   transform: translateX(-50%);
   z-index: -1;
 }
@@ -191,22 +194,21 @@ img{border: 0; vertical-align: top}
 #headerArea #gnb ul.dropdownmenu li ul{
   width: 100%; height: 200px;
   position: relative; 
-  top: 0; left: 0;
-  line-height: 2rem;
+  top: 20px; left: 0;
+  line-height: 2.2rem;
   display: none;
 }
 #headerArea #gnb ul.dropdownmenu li ul li{
   text-align: center;
-  font-size: 1.13rem;
+  font-size: 1.1rem;
   position: relative;
-  transition: all .5s;
+  transition: all .3s;
 }
 
 #headerArea #gnb ul.dropdownmenu li ul li a{
   display: block;
   text-align: center;
-  padding-top: 5px;
-  transition: all .5s; 
+  transition: all .3s; 
 }
 
 

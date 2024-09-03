@@ -57,7 +57,7 @@ $(document).ready(function() {
 
   
     
-     //1depth 효과
+    // 1depth 효과
     $('ul.dropdownmenu li.menu').hover(
        function() { 
             $('.depth1',this).css('color','#8E684C');
@@ -71,7 +71,7 @@ $(document).ready(function() {
         function() { 
              $('a',this).css('color','#8E684C').css('font-weight','600');
          },function() {
-             $('a',this).css('color','#777').css('font-weight','');;
+             $('a',this).css('color','#777').css('font-weight','');
     });
 
      //tab 처리
@@ -84,4 +84,16 @@ $(document).ready(function() {
         $('ul.dropdownmenu li.menu ul').slideUp('fast');
         $('#headerArea').animate({height:100},'fast').clearQueue();
     });
+
+    // 현재 페이지에 해당하는 메뉴 글자 하이라이팅
+    var getPath = window.location.href.split('/'); // 현재 url을 '/'기준으로 자름
+    var getSplitIdx = getPath[getPath.length-1].indexOf('_') // 자른 패스에서 숫자를 뽑아낼 기준인 언더바의 인덱스 값을 반환한다.
+    var depth1Num = getPath[getPath.length-1].charAt(getSplitIdx-1); // 언더바 앞에 ex)sub"1"_2 글자 반환
+    var depth2Num = getPath[getPath.length-1].charAt(getSplitIdx+1); // 언더바 뒤에 ex)sub1_"2" 글자 반환
+    var thisMenu = $('.depth1')[depth1Num-1]; // depth1 클래스를 가진 요소들 중 첫번째(인덱스라-1)요소 반환
+    var thisMenu2 = $(thisMenu).parent().next().find('a')[depth2Num-1]; // 찾아놓은 depth1에서 부모(h3)의 다음(ul) 자식중 a를 찾고 현재num요소를 가져옴.
+
+    $(thisMenu).css('color', '#8E684C'); // 1depth 글자색
+    $(thisMenu2).css('color', '#8E684C !important'); // 2depth 글자색
+
 });
