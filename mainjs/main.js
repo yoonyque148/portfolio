@@ -1,6 +1,6 @@
 
 
-// 회사소개 img hover
+// 회사소개 img hover Event
 
 $(document).ready(function(){
     $('.comp_img').css('background','url(./mainimages/company_b1.jpg)'); 
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 
 
-// 사업영역 img hover
+// 사업영역 click Event
 
 $(document).ready(function(){
 

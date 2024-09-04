@@ -49,7 +49,6 @@
 }
 
 .visual .dock .ps{
-  /* margin-right: 20px; */
   cursor: pointer; 
   display: block; 
   float: left; 
@@ -64,17 +63,6 @@
   font-size: 2rem; color: #fff;
   text-shadow: 0 0 5px rgba(112, 72, 43, 0.3);
 }   
-
-/* .visual .btn{
-  display: block; width: 40px; height: 100px;
-  background: red;
-  position: absolute; top:150px;
-  cursor:pointer;
-} */
-
-/* .visual .btnLeft{left:50%; margin-left: -490px;}
-.visual .btnRight{left:50%; margin-left: 450px;}     */
-
 
 
 /* -----본문 콘텐츠 영역------- */ 
@@ -98,8 +86,8 @@
 /* 섹션 1 - 회사소개 */
 
 .company{padding: 110px 0 110px; position: relative;}
-.company h3{font-size: 3.13rem;}
-.company .p1{font-family: "Noto Serif KR"; font-size: 2.5rem; font-weight: 500;
+.company h3{font-size: 2.5rem;}
+.company .p1{font-family: "Noto Serif KR"; font-size: 2.2rem; font-weight: 500;
   margin: 50px 0 ; position: relative; }
 .company .p1::after{content: ""; display: block;
   width: 1200px; height: 1px; background: #333;
@@ -109,13 +97,12 @@
 
 .company .company_container{position: relative; overflow: hidden;
   margin: 100px 0 0 ;}
-.company .company_con{float: left;
-   /* overflow: hidden; */
-}
+.company .company_con{float: left;}
 
 .company .p2{ display: block;
-  font-size: 1.38rem; font-weight: 500; 
+  font-size: 1.3rem; font-weight: 400; 
   line-height: 2.3rem;
+  letter-spacing: -0.2px;
 }
 .company ul{margin: 230px 0 0 0;}
 
@@ -134,38 +121,35 @@
 .company .comp_img{float: right;
   width: 795px; height: 550px;
 }
-.company .more{width: 240px; height: 50px; color: #8E684C;
-  font-size: 1.25rem; 
+.company .more{width: 200px; height: 45px; 
+  color: #8E684C;
+  font-size: 1.15rem; 
   border: 1px solid #8E684C; border-radius: 30px;
   text-align: center; padding: 8px;
   position: absolute; left: 0; top: 150px;
   display: block; box-sizing: border-box;
   overflow: hidden;
 }
-
 .company .more:hover{
-  width: 240px; height: 50px;
+  width: 200px; height: 45px;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   text-align: center; padding: 8px;
   position: absolute; left: 0; top: 150px; 
-  transition: all .6s ease-out;
+  transition: all .5s ease-out;
 }
 
 .company .more::before{content: ""; display: block;
   width: 0; height: 50px; 
-  font-size: 1.25rem; background: #8E684C;
-  text-align: center; padding: 8px;
-  box-sizing: border-box; color: #fff;
+  background: #8E684C;
+  box-sizing: border-box;
   position: absolute; left: -20px; top:0px;
   transition: all .5s ease-out;
   z-index: -1;
 }
-
 .company .more:hover::before{
-  width: 300px; height: 50px; color: #fff;
-  font-size: 1.25rem; background: #8E684C; 
-  text-align: center; padding: 8px;
+  width: 300px; height: 50px;
+  background: #8E684C; 
   position: absolute; left: -20px; top:0px;
 }
 
@@ -175,11 +159,11 @@
 .business{padding: 110px 0; height: 830px;}
 
 .business .business_container{position: relative; left: 0; top: 0;}
-.business h3{font-size: 3.13rem;}
+.business h3{font-size: 2.5rem;}
 .business .business_container .p1{
   display: block; 
   margin: 40px 0 40px;
-  font-size: 1.38rem; font-weight: 500;
+  font-size: 1.3rem; font-weight: 400;
 }
 .business .business_container img{
   display: block;
@@ -187,9 +171,8 @@
 }
 
 /*--- 오른쪽 메뉴 클릭 버튼--- */
-.business ul{position: absolute; right: 0; top: 230px; z-index: 10;
-}
-.business .business_menu li::after{content: ''; width: 340px; height:2px;
+.business ul{position: absolute; right: 0; top: 230px; z-index: 10;}
+.business .business_menu li::after{content: ''; width: 340px; height: 1px;
     display: block; background: #ccc; position: absolute; bottom: 0; left:220px}
 .business .business_menu li{  
   width: 540px;
@@ -199,6 +182,7 @@
   color: #6A6A6A;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
   transition: all .5s ease-out;
 }
 
@@ -220,8 +204,15 @@
   float: right; margin: 25px 20px 0; color: #ffcca8;
 }
 
-.business .business_container li h4{font-size: 2.19rem; font-weight: 600;position: absolute;left:220px; top:60px; transition: all .3s}
-.business .business_container li h4.active{ left:50px; top:40px}
+.business .business_container li h4{
+  font-size: 2rem; font-weight: 500;
+  position: absolute;left:220px; top:60px; 
+  transition: all .3s
+}
+.business .business_container li h4.active{
+  font-weight: 600;
+  left:50px; top:40px
+}
 
 
 
@@ -235,8 +226,8 @@
   margin-bottom: 10px;
 }
 .business dl dd{
-  width: 530px;
-  font-size: 1.25rem;
+  width: 520px;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 2rem;
   color: #000;
@@ -281,13 +272,13 @@
   background: url(../mainimages/brand.jpg) ;
 }
 .brand .brand_tit{float: left; overflow: hidden; margin: 100px 0; }
-.brand h3{font-size: 3.13rem; color: #fff;
+.brand h3{font-size: 2.5rem; color: #fff;
   text-shadow: 3px 3px 5px rgba(0,0,0,.5), -3px -3px 5px rgba(0,0,0,.5);
 }
 .brand .p1{
   display: block; margin: 40px 0;
-  font-size: 1.88rem; font-weight: 500; color: #fff;
-  line-height: 3.3rem; 
+  font-size: 1.5rem; font-weight: 500; color: #fff;
+  line-height: 2.7rem; 
   text-shadow: 3px 3px 5px rgba(0,0,0,.5), -3px -3px 8px rgba(0,0,0,.5);
 }
 .brand .brand_con{}
@@ -353,7 +344,7 @@
   align-content: center; 
 }
 
-.brand h4{font-size: 1.56rem; float: left;}
+.brand h4{font-size: 1.56rem; font-weight: 500; float: left;}
 .brand .brand_con p{margin: 25px 0 0; font-size: 1rem;}
 .brand .brand_con span{margin: 6px 15px 0;
   font-size: 1.85rem; color: #FFCCA8;
@@ -364,87 +355,16 @@
   transform: translateX(95px);
 }
 
-/* .brand .brand_con ul li{
-  width: 360px;
-  height: 480px;
-  border: 1px solid rgba(255,255,255,.5); 
-  border-radius: 20px;
-  padding: 55px 40px ;
-  box-sizing: border-box;
-  overflow: hidden;
-  background: #ffffff00;
-  color: #fff;
-  text-shadow: 2px 2px 6px rgba(0,0,0,.3);
-  backdrop-filter: blur(5px);
-  box-shadow: 2px 0px 8px 1px rgba(255, 255, 255, 0.5);
-  transition: all .3s ease;
-}
-.brand .brand_con ul li:hover{
-  background: #fff;
-  box-sizing: border-box;
-  overflow: hidden;
-  color: #111;
-  text-shadow: 0px 0px 0px rgba(0,0,0,.3);
-  box-shadow: 2px 2px 10px 5px rgba(0,0,0,.4);
-}
-
-
-.brand li:nth-child(1){position:absolute; right:385px; top: 0;}
-.brand li:nth-child(2){position:absolute; right: 0; top: 160px;}
-.brand li:nth-child(3){position:absolute; right: 385px; top: 505px;}
-.brand li:nth-child(4){position:absolute; right: 0; top: 665px;}
-  
-.brand .brand_con li img{opacity: 0; display: flex; align-content: center; 
-}
-.brand_con li:hover img{opacity: 1; transition: all .5s ease-out;}
-
-.brand .brand_con li:nth-child(1) img{
-  width: 200px;
-  margin: 100px auto;
-  display: flex;
-  align-content: center; 
-}
-.brand .brand_con li:nth-child(2) img{
-  width: 159px;
-  margin: 85px auto;
-  display: flex;
-  align-content: center; 
-}
-.brand .brand_con li:nth-child(3) img{
-  width: 260px;
-  margin: 110px auto;
-  display: flex;
-  align-content: center; 
-}
-.brand .brand_con li:nth-child(4) img{
-  width: 170px;
-  margin: 90px auto;
-  display: flex;
-  align-content: center; 
-}
-
-.brand h4{font-size: 1.56rem; float: left;}
-.brand .brand_con p{margin: 25px 0 0; font-size: 1rem;}
-.brand .brand_con span{margin: 6px 15px 0;
-  font-size: 1.85rem; color: #FFCCA8;
-  transition: all .5s ease-out;
-}
-.brand .brand_con span:hover{margin: 6px 15px 0;
-  font-size: 1.85rem; color: #8e684c;
-  transform: scale(1.2);
-} */
-
-
 
 
 /* 섹션 4 - 사회공헌 */
 .social{padding: 110px 0 110px; position: relative;
   text-align: center; overflow: hidden;
 }
-.social h3{font-size: 3.13rem; margin: 0 0 40px;}
+.social h3{font-size: 2.5rem; margin: 0 0 40px;}
 
 .social .p1{display: block; margin: 40px 0 50px;
-  font-size: 1.38rem; font-weight: 500; }
+  font-size: 1.3rem; font-weight: 400; }
 .social .social_box{
   width: 400px;
   height: 480px; 
@@ -505,7 +425,7 @@
   overflow: hidden;
 }
 
-.career h3{font-size: 3.13rem; color: #fff;}
+.career h3{font-size: 2.5rem; color: #fff;}
 
 .career p{display: block; margin: 25px 0 30px;
   font-size: 1.38rem; font-weight: 400; color: #fff;}
