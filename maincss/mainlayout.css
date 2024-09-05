@@ -74,7 +74,7 @@
 #content section:nth-of-type(1){width: 1200px; margin: 0 auto; }
 #content section:nth-of-type(2){width: 100%; margin: 0 auto; background: #F5F5F5 0 0 repeat;}
 #content section:nth-of-type(3){width: 2000px; margin: 0 auto;}
-#content section:nth-of-type(4){width: 2000px; margin: 0 auto;}
+#content section:nth-of-type(4){width: 1200px; margin: 0 auto;}
 #content section:nth-of-type(5){width: 2000px; margin: 0 auto}
 
 #content section .business_container{width: 1200px; margin: 0 auto;} 
@@ -366,7 +366,7 @@
 .social .p1{display: block; margin: 40px 0 50px;
   font-size: 1.3rem; font-weight: 400; }
 .social .social_box{
-  width: 400px;
+  width: 350px;
   height: 480px; 
   background: #423124e1;
   color: #FFCCA8;
@@ -374,15 +374,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute; right: 338px; top: 500px ;
+  position: absolute; right: -400px; top: 0;
   transition: all .3s ease-out;
 }
-.social .social_con{position: relative;  overflow: hidden;}
-.social .social_con img{transition: all .3s ease-out; overflow: hidden;}
-.social .social_con:hover img{transform: scale(1.1); filter: brightness(90%);}
+.social .social_con{position: relative; border-radius: 30px; overflow: hidden;}
+.social .social_con img{ filter: saturate(50%);
+   transition: all .4s ease-out; overflow: hidden;}
+.social .social_con:hover img{transform: scale(1.1); filter: brightness(100%) saturate(100%);}
 
 .social .social_con:hover .social_box {
-  width: 400px;
+  width: 350px;
   height: 480px;
   background: #423124e1;
   color: #FFCCA8;
@@ -390,13 +391,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute; right: 338px; top: 0 ;
+  position: absolute; right: 0; top: 0 ;
 }
-.social h4{font-size: 1.88rem; }
+.social h4{font-size: 1.6rem;}
 .social .social_box p{margin: 20px 0 0; font-size: 1.13rem;}
 
 .social .social_box a{margin: 30px 0 0; 
-  width: 150px; height: 30px; 
+  width: 120px; height: 30px; 
   color: #FFCCA8;
   font-size: 1.13rem; 
   border: 1px solid #FFCCA8; 
