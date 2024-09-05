@@ -189,7 +189,7 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
     width: 60%; height: 60%;
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid var(--pf-color);
+    border: 2px solid var(--pf-color);
     border-radius: 50px;
     background: #eae8db85;
     backdrop-filter: blur(10px);
@@ -215,7 +215,7 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
             & a:hover{
                 background: var(--pf-color);
                 color: #fff;
-                border: 1px solid var(--pf-color);
+                border: 2px solid var(--pf-color);
                 letter-spacing: 6px;
             }
             & a:nth-of-type(1):hover{
@@ -226,15 +226,16 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
 }
 
 .btn{
-    width: 200px;
+    width: 300px;
     font-size: 1.4rem;
-    font-family: var(--ft-serif);
+    font-family: var(--ft-sanserif);
+    font-weight: 600;
     font-style: italic;
     text-align: center;
     color: var(--pf-color);
-    border: 1px solid var(--pf-color);
+    border: 2px solid var(--pf-color);
     border-radius: 30px;
-    padding: 10px 40px;
+    padding: 10px 0;
     transition: .4s ease-out;
 }
 
@@ -245,11 +246,16 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
     font-size: 3.5rem;
     font-weight: 600;
 }
-.tit_p{
+.tit_li{
     font-size: 1.1rem;
-    line-height: 1.7rem;
-    text-align: justify;
-    margin-top: 20px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin-top: 30px;
+}
+.tit_li_bf{
+    content: '\1F5F8';
+    display: inline-block;
+    margin: 0 8px 0 5px;
 }
 .tit_a{
     font-size: 1.5rem;
@@ -266,8 +272,8 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
 // common dt dd 상속 css
 
 .common_dt{
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 .color_dd{
     width: 25px;
@@ -277,7 +283,7 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
     margin-right: 10px;
 }
 .common_dd{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #666;
 }
 
@@ -353,7 +359,7 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
 /* 기업형 웹 */
 #web{ position: relative;}
 .web_warp{
-    width: 70%; margin: 0 auto;
+    width: 71%; margin: 0 auto;
     position: absolute; left: 50%; top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -391,8 +397,24 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
         top: 14.2%;
         left: 2%;
     }
-    
 }
+
+#web .web_right .bfore{
+    @extend .tit_a; 
+    background: #d4d4d4b6;
+    border: none;
+    border-radius: 50%;
+    position: absolute; right: 210px;
+    width: 50px;
+    padding: 13px 0 7px;
+    rotate: -40deg;
+    // padding: 10px 5px 5px;
+}
+#web .web_right .bfore:hover{
+    background: #747474;
+    border: none;
+}
+
 
 .web_right{
     float: right;
@@ -400,7 +422,10 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
     & .tit{
         position: relative;
         & strong{ @extend .tit_strong; color: var(--web-color);}
-        & p{ @extend .tit_p; color: #555;}
+        & ul{ @extend .tit_li; color: #555;
+            & li::before{ @extend .tit_li_bf };
+            & li:hover{background: #ffcca881};
+        }
         & a{ @extend .tit_a; 
             color: var(--web-color);
             border: 1px solid var(--web-color);
@@ -411,9 +436,6 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
         }
     }
 }
-
-
-
 
 
 .web_right .colorfont{
@@ -456,10 +478,6 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
         & dd{ @extend .common_dd; }
     }
 }
-
-
-
-
 
 
 
@@ -535,7 +553,10 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
             color: #555;
             margin-left: 20px
         }
-        & p{ @extend .tit_p; color: #555;}
+        & ul{ @extend .tit_li; color: #555;
+            & li::before{ @extend .tit_li_bf };
+            & li:hover{background: #ffcca881};
+        }
         & a{ @extend .tit_a; 
             color: var(--web-color);
             border: 1px solid var(--web-color);
@@ -671,7 +692,10 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
         position: relative;
         & strong{ @extend .tit_strong; color: var(--rw-color);
         }
-        & p{ @extend .tit_p; color: #fff; }
+        & ul{ @extend .tit_li; color: #fff;
+            & li::before{ @extend .tit_li_bf };
+            & li:hover{background: #f2a90038};
+        }
         & a{ @extend .tit_a; 
             color: var(--rw-color);
             border: 1px solid var(--rw-color);
@@ -789,7 +813,7 @@ section:nth-child(6) { background-image:url(../image/bg/bg5.jpg); }
         position: relative;
         & strong{ @extend .tit_strong; color: var(--dp-color);
         }
-        & p{ @extend .tit_p; color: #fff; }
+        & p{ @extend .tit_li; color: #fff; }
         & a{ @extend .tit_a; 
             color: var(--dp-color);
             border: 1px solid var(--dp-color);
