@@ -47,30 +47,163 @@
 }
 
 
+/* 식당 리스트 con2 */
 
-/* con2 */
-.content_area .con2{width: 100%; position: relative;}
-.content_area .con2_box::before{
+.content_area .con2{width: 100%; margin: 0px auto;}
+.content_area .tit_img{
+    width: 95%; margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.content_area .map_con{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+.content_area .map_left{
+    width: 90%; margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.content_area .map_left .map{
+    width: 100%;
+    display: block; 
+    margin: 0 auto;
+    position: relative;
+}
+.content_area .map_left .mapimg{
+    display: block; 
+    margin: 0 auto;
+}
+.content_area .map_left .jejutit{
+    font-family: 'Monserrat';
+    letter-spacing: .7rem;
+    color: #ccc;
+    position: absolute;
+    left: 30%; top: 38%;
+}
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+.content_area .map_left .pin{
+    position: absolute;
+    left: 40%; top: 1%;
+}
+.content_area .map_left .pin span{
+    font-size: 2.5rem;
+    color :#8E684C;
+}
+
+.content_area .map_left .branch{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.content_area .map_left .branch img{
+    border-radius: 200px;
+    width: 50%;
+}
+.content_area .map_left .branch ul{
+    width: 50%;
+    margin-left: 30px;
+}
+.content_area .map_left .branch ul li:nth-of-type(1) span{
+    display: block;
+    width: 100%;
+    color: #8E684C;
+    border-bottom: 1px solid #8E684C;
+    padding: 5px 0;
+    font-weight: 600;
+}
+.content_area .map_left .branch ul li:nth-of-type(1) strong{
+    display: block;
+    font-size: 1.25rem;
+    margin: 10px 0;
+    font-weight: 700;
+    
+}
+.content_area .map_left .branch ul li:nth-of-type(2){
+    font-weight: 600;
+}
+.content_area .map_left .branch ul li:nth-of-type(3){
+    margin: 5px 0;
+    color: #444;
+}
+
+
+/* 매장 리스트  */
+
+.content_area .restaurant{
+    display: flex; 
+    justify-content: flex-end;
+    width: 90%; margin: 0 auto;
+    margin-top: 30px;
+}
+.content_area .restaurant ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.content_area .restaurant div{
+    width: 45%; margin: 0 auto;
+    cursor: pointer;
+}
+.content_area .restaurant div ul li{
+    width: 100%;
+}
+.content_area .restaurant div ul li dl{
+    display: flex;
+    align-items: center;
+} 
+.content_area .restaurant div ul li dl dt{
+    width: 60px;
+    color: #8E684C;
+    background: #f5e6da81;;
+    border-radius: 20px;
+    padding: 2px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+.content_area .restaurant div ul li dl dd{
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+
+
+
+
+/* con3 */
+.content_area .con3{width: 100%; position: relative;}
+.content_area .con3_box::before{
     content: ''; display: block;
     width: 100%; height: 100%;
     background: #E6E3DC;
     position: absolute; left: 0; top: 10%;
     z-index: -10;
 }
-.content_area .con2 img{
+.content_area .con3 img{
     display: block;
     width: 90%; margin: 0 5%;
-    margin-top: 70px;
+    margin-top: 100px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
-.content_area .con2 h5{
+.content_area .con3 h5{
     width: 80%; margin: 0 10%;
     font-size: 1.5rem;
     line-height: 2.4rem;
     text-align: center;
     margin-top: 40px;
 }
-.content_area .con2 p:nth-of-type(1){
+.content_area .con3 p:nth-of-type(1){
     width: 90%; margin: 0 5%;
     font-size: 1.4rem;
     font-weight: 600;
@@ -79,7 +212,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.content_area .con2 p:nth-of-type(2){
+.content_area .con3 p:nth-of-type(2){
     width: 90%; margin: 0 5%;
     font-size: 1.2rem;
     color: #555;
@@ -89,10 +222,12 @@
 }
 
 
-/* con3  */
-.content_area .con3{width: 100%; margin: 120px auto 100px;}
-.content_area .con3 ul{width: 90%; margin: 0 5%;}
-.content_area .con3 ul li{
+
+
+/* con4  */
+.content_area .con4{width: 100%; margin: 100px auto;}
+.content_area .con4 ul{width: 90%; margin: 0 5%;}
+.content_area .con4 ul li{
     width: 100%; height: auto;
     box-sizing: border-box;
     border-radius: 20px;
@@ -102,73 +237,29 @@
     overflow: hidden;
     position: relative;
 }
-.content_area .con3 ul li:nth-of-type(1){
+.content_area .con4 ul li:nth-of-type(1){
     background: url(../images/sub3/li1.jpg);
     background-size: cover;
     background-position: center;
 }
-.content_area .con3 ul li:nth-of-type(2){
+.content_area .con4 ul li:nth-of-type(2){
     background: url(../images/sub3/li2.jpg);
     background-size: cover;
     background-position: center;
 }
-.content_area .con3 ul li dl{
+.content_area .con4 ul li dl{
     color: #fff;
 }
-.content_area .con3 ul li dl dt{
+.content_area .con4 ul li dl dt{
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 2.2rem;
     margin-bottom: 20px;
 }
-.content_area .con3 ul li dl dd{
+.content_area .con4 ul li dl dd{
     font-size: 1.1rem;
     line-height: 2rem;
 }
 
 
-/* 식당 리스트 */
-.content_area .con4 h5{
-    width: 80%; margin: 0 10%;
-    font-size: 1.7rem;
-    line-height: 2.4rem;
-    text-align: center;
-    margin-top: 40px;
-}
-.content_area .restaurant{width: 100%; height: auto;}
-
-.content_area .restaurant ul{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 30px 0 ;
-}
-.content_area .restaurant ul li{
-    width: 33.33%;
-    margin: 0 24%;
-    display: flex; 
-    flex-direction: column;
-    margin: 20px 0;
-}
-.content_area .restaurant ul li img{
-    width: 80%; margin: 0 10%;
-    border-radius: 100px;
-}
-.content_area .restaurant ul li dl{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 10px;
-} 
-.content_area .restaurant ul li dl dt{
-    color: #8E684C;
-    border: 1px solid #8E684C;
-    border-radius: 20px;
-    padding: 2px 10px;
-}
-.content_area .restaurant ul li dl dd{
-    font-size: 1.1rem;
-    margin-top: 10px;
-}
 
